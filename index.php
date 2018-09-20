@@ -1,1 +1,1 @@
-header("Location: /index.html");
+<h1>Yeet</h1>
