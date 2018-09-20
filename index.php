@@ -1,1 +1,3 @@
-<h1>Yeet</h1>
+<?php
+header('Location: /index.html');
+?>
