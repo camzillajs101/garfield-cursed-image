@@ -7,6 +7,10 @@
     height: 300px;
     margin: 10px;
   }
+  button {
+    border: none;
+    outline: none;
+  }
   </style>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
@@ -24,7 +28,7 @@ garfield image -->
   let images = 22; //terrible system shoot me with a tact shottie #fortnitebattleroyale
 
   for (let i = 0; i < images; i++){
-    $('#images_here_lol_oof').append(`<img src="images/${i+1}.jpg">`); //hi elina hi spencer
+    $('#images_here_lol_oof').append(`<button onclick="window.location.href='images/${i+1}.jpg'"><img src="images/${i+1}.jpg"></button>`); //hi elina hi spencer
   };
 </script>
 </body>
