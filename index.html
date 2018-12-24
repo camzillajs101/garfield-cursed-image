@@ -38,7 +38,8 @@
 
       // who there why u lookin at my code
       if (isMobile){
-        $('center').css('font-size','+=2em');
+        $('center').css("font-size","+=2em");
+        $('center').append("<h3>(mobile edition)</h3>")
         for (let i = 0; i < images; i++){
           $('#images_here_lol_oof').append(`<button onclick="window.location.href='images/${i+1}.jpg'"><img style="width:90vw;height:auto" src="images/${i+1}.jpg"></button><br>`);
         }
