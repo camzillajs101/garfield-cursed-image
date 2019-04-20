@@ -44,9 +44,12 @@
       <h2>Welcome to the</h2>
       <h1>Garfield Cursed Image Gallery!</h1>
     </center>
-    <center id="images_here_lol_oof"></center>
-    <center><h3>Want to add images? If you're here you probably know me personally so just text me idk</h3></center>
-    <center><h3>Or, if you're here and somehow don't know me, <a href="mailto:garfieldcursedimage@gmail.com?subject=garfieldcursedimage%20submission">email me</a>.</center>
+    <div id="images"></div>
+    <center>
+      <h3>Want to add images? If you're here you probably know me personally so just text me idk</h3>
+      <h3>Or, if you're here and somehow don't know me, <a href="mailto:garfieldcursedimage@gmail.com?subject=garfieldcursedimage%20submission">email me</a>.
+    </center>
+
     <script>
       let images = 41;
       let isMobile = false;
@@ -62,11 +65,11 @@
         $('center').css("font-size","+=2em");
         $('center').first().append("<h3>(mobile edition)</h3>")
         for (let i = 0; i < images; i++){
-          $('#images_here_lol_oof').append(`<button onclick="window.location.href='images/${i+1}.jpg'"><img style="width:90vw;height:auto" src="images/${i+1}.jpg"></button><br>`);
+          $('#images').append(`<button onclick="window.location.href='images/${i+1}.jpg'"><img style="width:90vw;height:auto" src="images/${i+1}.jpg"></button><br>`);
         }
       } else {
         for (let i = 0; i < images; i++){
-          $('#images_here_lol_oof').append(`<button onclick="window.location.href='images/${i+1}.jpg'"><img src="images/${i+1}.jpg"></button>`);
+          $('#images').append(`<button onclick="window.location.href='images/${i+1}.jpg'"><img src="images/${i+1}.jpg"></button>`);
         }
       }
     </script>
