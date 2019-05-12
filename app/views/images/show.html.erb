@@ -1,0 +1,14 @@
+<% content_for :title, @image.name %>
+
+<center>
+  <% unless @image.id == Image.first.id %>
+    <%= link_to "< Previous", Image.get_previous_image(@image), class: "nav_btn" %>
+  <% end %>
+  <%= link_to "All", images_path, class: "nav_btn" %>
+  <% unless @image.id == Image.last.id %>
+    <%= link_to "Next >", Image.get_next_image(@image), class: "nav_btn" %>
+  <% end %>
+  <h1 class="show_text"><i>Image <%= @image.id %>: <%= @image.name %></i></h1>
+  <h4 class="show_text">Added by <%= @image.author %></h4>
+  <%= image_tag(@image.path, alt: @image.name, class: "show_image") %>
+</center>

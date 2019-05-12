@@ -1,0 +1,32 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+@font-face {
+  font-family: "Baskerville";
+  src: url(/assets/Baskerville.ttc);
+}
+@font-face {
+  font-family: "Didot";
+  src: url(/assets/Didot.ttc);
+}
+a {
+  color: rgb(0,160,255);
+  text-decoration: none;
+}
+a:hover {
+  color: rgb(0,120,235);
+  text-decoration: underline;
+}

@@ -1,0 +1,22 @@
+<!-- this is the root/welcome page as well as index -->
+<% content_for :title, "why are you here" %>
+
+<center>
+  <h2 class="index_text">Welcome to the</h2>
+  <h1 class="index_text">Garfield Cursed Image Gallery!</h1>
+</center>
+<br>
+<blockquote>
+  Over the past few months, I've been collecting so-called "cursed images" of Garfield, everyone's favorite Monday-hating
+  comic strip cat. These are images that may be somewhat disturbing or otherworldly, or just plain strange. If you think you
+  have a good image that's not already on the site, send it to me at <a href="mailto:info@garfieldcursedimage.org">info@garfieldcursedimage.org</a>.
+  Otherwise, I usually find new images to add pretty often. Anyway, enjoy the nightmare fuel!
+</blockquote>
+<br>
+
+<!-- IMAGES -->
+<center>
+<% @images.each do |f| %>
+  <%= link_to image_tag(f.path, size: "300x300", alt: f.name, class: "index_image"), image_path(f.id) %>
+<% end %>
+</center>

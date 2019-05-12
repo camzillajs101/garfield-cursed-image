@@ -1,0 +1,32 @@
+// Place all the styles related to the images controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+img.index_image {
+  margin: 20px;
+  border: 1px solid gray;
+}
+img.show_image {
+  margin: 20px;
+  width: 400px;
+  height: auto;
+  border: 1px solid gray;
+}
+h1.index_text, h2.index_text, blockquote {
+  font-family: "Baskerville";
+}
+blockquote {
+  text-indent: 20px;
+  line-height: 150%;
+}
+.show_text {
+  font-family: "Didot";
+}
+.nav_btn {
+  text-align: center;
+  border: 1px solid gray;
+  border-radius: 2px;
+  padding: 5px;
+  font-family: "Baskerville";
+  padding-left: 20px;
+  padding-right: 20px;
+}
