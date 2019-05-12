@@ -17,6 +17,6 @@
 <!-- IMAGES -->
 <center>
 <% @images.each do |f| %>
-  <%= link_to image_tag(f.path, size: "300x300", alt: f.name, class: "index_image"), image_path(f.id) %>
+  <%= link_to image_tag(f.path, size: "300x300", title: f.name, class: "index_image"), image_path(f.id) %>
 <% end %>
 </center>
