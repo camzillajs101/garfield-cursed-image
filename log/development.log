@@ -6228,3 +6228,216 @@ Processing by ImagesController#index as HTML
 Completed 200 OK in 66ms (Views: 65.3ms | ActiveRecord: 0.3ms)
 
 
+Started GET "/" for ::1 at 2019-05-12 14:04:09 -0400
+  
+PG::ConnectionBad (could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+):
+  
+pg (1.1.4) lib/pg.rb:56:in `initialize'
+pg (1.1.4) lib/pg.rb:56:in `new'
+pg (1.1.4) lib/pg.rb:56:in `connect'
+activerecord (5.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:692:in `connect'
+activerecord (5.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:223:in `initialize'
+activerecord (5.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:48:in `new'
+activerecord (5.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:48:in `postgresql_connection'
+activerecord (5.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:811:in `new_connection'
+activerecord (5.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:855:in `checkout_new_connection'
+activerecord (5.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:834:in `try_to_checkout_new_connection'
+activerecord (5.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:795:in `acquire_connection'
+activerecord (5.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:523:in `checkout'
+activerecord (5.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:382:in `connection'
+activerecord (5.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:1014:in `retrieve_connection'
+activerecord (5.2.3) lib/active_record/connection_handling.rb:118:in `retrieve_connection'
+activerecord (5.2.3) lib/active_record/connection_handling.rb:90:in `connection'
+activerecord (5.2.3) lib/active_record/migration.rb:554:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+webpacker (4.0.2) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2019-05-12 14:04:20 -0400
+  [1m[35m (3.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/camilomason/.rvm/gems/ruby-2.6.2/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (2.5ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  ↳ app/views/images/index.html.erb:19
+  Rendered images/index.html.erb within layouts/application (1374.9ms)
+Completed 500 Internal Server Error in 1388ms (ActiveRecord: 10.1ms)
+
+
+  
+ActionView::Template::Error (The asset "assets/favicon.jpg" is not present in the asset pipeline.):
+    2: <html>
+    3:   <head>
+    4:     <title><%= yield(:title) %></title>
+    5:     <%= favicon_link_tag "assets/favicon.jpg" %>
+    6: 
+    7:     <%= csrf_meta_tags %>
+    8:     <%= csp_meta_tag %>
+  
+app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__4413536421945952241_70187722539460'
+Started GET "/" for ::1 at 2019-05-12 14:04:37 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  ↳ app/views/images/index.html.erb:19
+  Rendered images/index.html.erb within layouts/application (28.6ms)
+Completed 200 OK in 63ms (Views: 61.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2019-05-12 14:04:45 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  ↳ app/views/images/index.html.erb:19
+  Rendered images/index.html.erb within layouts/application (34.2ms)
+Completed 500 Internal Server Error in 42ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (The asset "favicon.png" is not present in the asset pipeline.):
+    2: <html>
+    3:   <head>
+    4:     <title><%= yield(:title) %></title>
+    5:     <%= favicon_link_tag asset_path('favicon.png') %>
+    6: 
+    7:     <%= csrf_meta_tags %>
+    8:     <%= csp_meta_tag %>
+  
+app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__4413536421945952241_70187760784480'
+Started GET "/" for ::1 at 2019-05-12 14:04:52 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  ↳ app/views/images/index.html.erb:19
+  Rendered images/index.html.erb within layouts/application (32.7ms)
+Completed 500 Internal Server Error in 38ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (The asset "images/favicon.png" is not present in the asset pipeline.):
+    2: <html>
+    3:   <head>
+    4:     <title><%= yield(:title) %></title>
+    5:     <%= favicon_link_tag asset_path('images/favicon.png') %>
+    6: 
+    7:     <%= csrf_meta_tags %>
+    8:     <%= csp_meta_tag %>
+  
+app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__4413536421945952241_70187754242620'
+Started GET "/" for ::1 at 2019-05-12 14:05:02 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  ↳ app/views/images/index.html.erb:19
+  Rendered images/index.html.erb within layouts/application (48.0ms)
+Completed 500 Internal Server Error in 157ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `asset_image_path' for #<#<Class:0x00007fabb69d6188>:0x00007fabb6ca8c80>
+Did you mean?  asset_pack_path):
+    2: <html>
+    3:   <head>
+    4:     <title><%= yield(:title) %></title>
+    5:     <%= favicon_link_tag asset_image_path('favicon.png') %>
+    6: 
+    7:     <%= csrf_meta_tags %>
+    8:     <%= csp_meta_tag %>
+  
+app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__4413536421945952241_70187741563780'
+Started GET "/" for ::1 at 2019-05-12 14:05:10 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  ↳ app/views/images/index.html.erb:19
+  Rendered images/index.html.erb within layouts/application (30.8ms)
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 0.4ms)
+
+
+  
+SyntaxError (/Users/camilomason/Desktop/coding/github/garfield-cursed-image/app/views/layouts/application.html.erb:5: syntax error, unexpected ')', expecting end
+...ink_tag 'images/favicon.png') );@output_buffer.safe_append='
+...                              ^):
+  
+app/views/layouts/application.html.erb:5: syntax error, unexpected ')', expecting end
+Started GET "/" for ::1 at 2019-05-12 14:05:14 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  ↳ app/views/images/index.html.erb:19
+  Rendered images/index.html.erb within layouts/application (51.0ms)
+Completed 500 Internal Server Error in 57ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (The asset "images/favicon.png" is not present in the asset pipeline.):
+    2: <html>
+    3:   <head>
+    4:     <title><%= yield(:title) %></title>
+    5:     <%= favicon_link_tag 'images/favicon.png' %>
+    6: 
+    7:     <%= csrf_meta_tags %>
+    8:     <%= csp_meta_tag %>
+  
+app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__4413536421945952241_70187722185240'
+Started GET "/" for ::1 at 2019-05-12 14:05:20 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  ↳ app/views/images/index.html.erb:19
+  Rendered images/index.html.erb within layouts/application (28.5ms)
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (The asset "assets/images/favicon.png" is not present in the asset pipeline.):
+    2: <html>
+    3:   <head>
+    4:     <title><%= yield(:title) %></title>
+    5:     <%= favicon_link_tag 'assets/images/favicon.png' %>
+    6: 
+    7:     <%= csrf_meta_tags %>
+    8:     <%= csp_meta_tag %>
+  
+app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__4413536421945952241_70187711279400'
+Started GET "/" for ::1 at 2019-05-12 14:05:41 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (0.8ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  ↳ app/views/images/index.html.erb:19
+  Rendered images/index.html.erb within layouts/application (29.0ms)
+Completed 200 OK in 47ms (Views: 44.2ms | ActiveRecord: 0.8ms)
+
+
