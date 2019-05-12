@@ -80,6 +80,7 @@ test:
 #
 production:
   <<: *default
+  adapter: postgresql
   database: garfieldcursedimage_production
   username: garfieldcursedimage
   password: <%= ENV['GARFIELDCURSEDIMAGE_DATABASE_PASSWORD'] %>
