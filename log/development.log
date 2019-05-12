@@ -5688,3 +5688,466 @@ Processing by ImagesController#index as HTML
 Completed 200 OK in 62ms (Views: 60.6ms | ActiveRecord: 0.4ms)
 
 
+Started GET "/" for ::1 at 2019-05-12 11:50:40 -0400
+  [1m[35m (4.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/camilomason/.rvm/gems/ruby-2.6.2/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (2.6ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  ↳ app/views/images/index.html.erb:19
+  Rendered images/index.html.erb within layouts/application (1356.9ms)
+Completed 200 OK in 1405ms (Views: 1385.0ms | ActiveRecord: 11.9ms)
+
+
+Started GET "/" for ::1 at 2019-05-12 11:51:50 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (1.0ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  ↳ app/views/images/index.html.erb:19
+  Rendered images/index.html.erb within layouts/application (43.0ms)
+Completed 200 OK in 82ms (Views: 79.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/images/4" for ::1 at 2019-05-12 11:51:53 -0400
+Processing by ImagesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mImage Load (0.8ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:7
+  Rendering images/show.html.erb within layouts/application
+  [1m[36mImage Load (0.2ms)[0m  [1m[34mSELECT  "images".* FROM "images" ORDER BY "images"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:4
+  [1m[36mImage Load (2.4ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE (images.id < 4 ) ORDER BY created_at DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/image.rb:5
+  [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT  "images".* FROM "images" ORDER BY "images"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:8
+  [1m[36mImage Load (0.8ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE (images.id > 4 ) ORDER BY created_at asc LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/image.rb:8
+  Rendered images/show.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 34ms (Views: 19.9ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/images/5" for ::1 at 2019-05-12 11:52:03 -0400
+Processing by ImagesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:7
+  Rendering images/show.html.erb within layouts/application
+  [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT  "images".* FROM "images" ORDER BY "images"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:4
+  [1m[36mImage Load (0.8ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE (images.id < 5 ) ORDER BY created_at DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/image.rb:5
+  [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT  "images".* FROM "images" ORDER BY "images"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:8
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE (images.id > 5 ) ORDER BY created_at asc LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/image.rb:8
+  Rendered images/show.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 24ms (Views: 19.3ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/images/6" for ::1 at 2019-05-12 11:52:03 -0400
+Processing by ImagesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:7
+  Rendering images/show.html.erb within layouts/application
+  [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT  "images".* FROM "images" ORDER BY "images"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:4
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE (images.id < 6 ) ORDER BY created_at DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/image.rb:5
+  [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT  "images".* FROM "images" ORDER BY "images"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:8
+  [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE (images.id > 6 ) ORDER BY created_at asc LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/image.rb:8
+  Rendered images/show.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 24ms (Views: 19.8ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/images/7" for ::1 at 2019-05-12 11:52:03 -0400
+Processing by ImagesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:7
+  Rendering images/show.html.erb within layouts/application
+  [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT  "images".* FROM "images" ORDER BY "images"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:4
+  [1m[36mImage Load (0.6ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE (images.id < 7 ) ORDER BY created_at DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/image.rb:5
+  [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT  "images".* FROM "images" ORDER BY "images"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:8
+  [1m[36mImage Load (0.6ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE (images.id > 7 ) ORDER BY created_at asc LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/image.rb:8
+  Rendered images/show.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 22ms (Views: 18.2ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/images/8" for ::1 at 2019-05-12 11:52:04 -0400
+Processing by ImagesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:7
+  Rendering images/show.html.erb within layouts/application
+  [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT  "images".* FROM "images" ORDER BY "images"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:4
+  [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE (images.id < 8 ) ORDER BY created_at DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/image.rb:5
+  [1m[36mImage Load (0.2ms)[0m  [1m[34mSELECT  "images".* FROM "images" ORDER BY "images"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:8
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE (images.id > 8 ) ORDER BY created_at asc LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/image.rb:8
+  Rendered images/show.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 22ms (Views: 19.2ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/images/9" for ::1 at 2019-05-12 11:52:04 -0400
+Processing by ImagesController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:7
+  Rendering images/show.html.erb within layouts/application
+  [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT  "images".* FROM "images" ORDER BY "images"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:4
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE (images.id < 9 ) ORDER BY created_at DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/image.rb:5
+  [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT  "images".* FROM "images" ORDER BY "images"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:8
+  [1m[36mImage Load (0.7ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE (images.id > 9 ) ORDER BY created_at asc LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/image.rb:8
+  Rendered images/show.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 24ms (Views: 19.6ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/images/10" for ::1 at 2019-05-12 11:52:04 -0400
+Processing by ImagesController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:7
+  Rendering images/show.html.erb within layouts/application
+  [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT  "images".* FROM "images" ORDER BY "images"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:4
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE (images.id < 10 ) ORDER BY created_at DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/image.rb:5
+  [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT  "images".* FROM "images" ORDER BY "images"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:8
+  [1m[36mImage Load (0.8ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE (images.id > 10 ) ORDER BY created_at asc LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/image.rb:8
+  Rendered images/show.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 24ms (Views: 19.3ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/images/11" for ::1 at 2019-05-12 11:52:04 -0400
+Processing by ImagesController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mImage Load (0.2ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:7
+  Rendering images/show.html.erb within layouts/application
+  [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT  "images".* FROM "images" ORDER BY "images"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:4
+  [1m[36mImage Load (0.7ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE (images.id < 11 ) ORDER BY created_at DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/image.rb:5
+  [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT  "images".* FROM "images" ORDER BY "images"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:8
+  [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE (images.id > 11 ) ORDER BY created_at asc LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/image.rb:8
+  Rendered images/show.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 37ms (Views: 33.2ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/images/12" for ::1 at 2019-05-12 11:52:04 -0400
+Processing by ImagesController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:7
+  Rendering images/show.html.erb within layouts/application
+  [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT  "images".* FROM "images" ORDER BY "images"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:4
+  [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE (images.id < 12 ) ORDER BY created_at DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/image.rb:5
+  [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT  "images".* FROM "images" ORDER BY "images"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:8
+  [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE (images.id > 12 ) ORDER BY created_at asc LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/image.rb:8
+  Rendered images/show.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 24ms (Views: 19.2ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/images/13" for ::1 at 2019-05-12 11:52:05 -0400
+Processing by ImagesController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mImage Load (0.6ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:7
+  Rendering images/show.html.erb within layouts/application
+  [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT  "images".* FROM "images" ORDER BY "images"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:4
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE (images.id < 13 ) ORDER BY created_at DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/image.rb:5
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT  "images".* FROM "images" ORDER BY "images"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:8
+  [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE (images.id > 13 ) ORDER BY created_at asc LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/image.rb:8
+  Rendered images/show.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 25ms (Views: 20.5ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/images/14" for ::1 at 2019-05-12 11:52:05 -0400
+Processing by ImagesController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:7
+  Rendering images/show.html.erb within layouts/application
+  [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT  "images".* FROM "images" ORDER BY "images"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:4
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE (images.id < 14 ) ORDER BY created_at DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/image.rb:5
+  [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT  "images".* FROM "images" ORDER BY "images"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:8
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE (images.id > 14 ) ORDER BY created_at asc LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/image.rb:8
+  Rendered images/show.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 23ms (Views: 17.5ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/images/15" for ::1 at 2019-05-12 11:52:05 -0400
+Processing by ImagesController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:7
+  Rendering images/show.html.erb within layouts/application
+  [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT  "images".* FROM "images" ORDER BY "images"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:4
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE (images.id < 15 ) ORDER BY created_at DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/image.rb:5
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT  "images".* FROM "images" ORDER BY "images"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:8
+  [1m[36mImage Load (0.6ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE (images.id > 15 ) ORDER BY created_at asc LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/image.rb:8
+  Rendered images/show.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 23ms (Views: 19.6ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/images/16" for ::1 at 2019-05-12 11:52:05 -0400
+Processing by ImagesController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:7
+  Rendering images/show.html.erb within layouts/application
+  [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT  "images".* FROM "images" ORDER BY "images"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:4
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE (images.id < 16 ) ORDER BY created_at DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/image.rb:5
+  [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT  "images".* FROM "images" ORDER BY "images"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:8
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE (images.id > 16 ) ORDER BY created_at asc LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/image.rb:8
+  Rendered images/show.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 21ms (Views: 17.9ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/images/17" for ::1 at 2019-05-12 11:52:05 -0400
+Processing by ImagesController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[36mImage Load (0.2ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:7
+  Rendering images/show.html.erb within layouts/application
+  [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT  "images".* FROM "images" ORDER BY "images"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:4
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE (images.id < 17 ) ORDER BY created_at DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/image.rb:5
+  [1m[36mImage Load (0.2ms)[0m  [1m[34mSELECT  "images".* FROM "images" ORDER BY "images"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:8
+  [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE (images.id > 17 ) ORDER BY created_at asc LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/image.rb:8
+  Rendered images/show.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 23ms (Views: 19.9ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/images/18" for ::1 at 2019-05-12 11:52:05 -0400
+Processing by ImagesController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:7
+  Rendering images/show.html.erb within layouts/application
+  [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT  "images".* FROM "images" ORDER BY "images"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:4
+  [1m[36mImage Load (0.7ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE (images.id < 18 ) ORDER BY created_at DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/image.rb:5
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT  "images".* FROM "images" ORDER BY "images"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:8
+  [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE (images.id > 18 ) ORDER BY created_at asc LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/image.rb:8
+  Rendered images/show.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 26ms (Views: 21.7ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/images/19" for ::1 at 2019-05-12 11:52:05 -0400
+Processing by ImagesController#show as HTML
+  Parameters: {"id"=>"19"}
+  [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:7
+  Rendering images/show.html.erb within layouts/application
+  [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT  "images".* FROM "images" ORDER BY "images"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:4
+  [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE (images.id < 19 ) ORDER BY created_at DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/image.rb:5
+  [1m[36mImage Load (0.2ms)[0m  [1m[34mSELECT  "images".* FROM "images" ORDER BY "images"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:8
+  [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE (images.id > 19 ) ORDER BY created_at asc LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/image.rb:8
+  Rendered images/show.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 35ms (Views: 15.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/images/20" for ::1 at 2019-05-12 11:52:06 -0400
+Processing by ImagesController#show as HTML
+  Parameters: {"id"=>"20"}
+  [1m[36mImage Load (0.2ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:7
+  Rendering images/show.html.erb within layouts/application
+  [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT  "images".* FROM "images" ORDER BY "images"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:4
+  [1m[36mImage Load (0.6ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE (images.id < 20 ) ORDER BY created_at DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/image.rb:5
+  [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT  "images".* FROM "images" ORDER BY "images"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:8
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE (images.id > 20 ) ORDER BY created_at asc LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/image.rb:8
+  Rendered images/show.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 24ms (Views: 20.3ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/images/21" for ::1 at 2019-05-12 11:52:06 -0400
+Processing by ImagesController#show as HTML
+  Parameters: {"id"=>"21"}
+  [1m[36mImage Load (0.2ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:7
+  Rendering images/show.html.erb within layouts/application
+  [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT  "images".* FROM "images" ORDER BY "images"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:4
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE (images.id < 21 ) ORDER BY created_at DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/image.rb:5
+  [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT  "images".* FROM "images" ORDER BY "images"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:8
+  [1m[36mImage Load (0.7ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE (images.id > 21 ) ORDER BY created_at asc LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/image.rb:8
+  Rendered images/show.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 23ms (Views: 18.8ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/images/20" for ::1 at 2019-05-12 11:52:06 -0400
+Processing by ImagesController#show as HTML
+  Parameters: {"id"=>"20"}
+  [1m[36mImage Load (1.0ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:7
+  Rendering images/show.html.erb within layouts/application
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT  "images".* FROM "images" ORDER BY "images"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:4
+  [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE (images.id < 20 ) ORDER BY created_at DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/image.rb:5
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT  "images".* FROM "images" ORDER BY "images"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:8
+  [1m[36mImage Load (0.6ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE (images.id > 20 ) ORDER BY created_at asc LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/image.rb:8
+  Rendered images/show.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 31ms (Views: 26.4ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/images/19" for ::1 at 2019-05-12 11:52:06 -0400
+Processing by ImagesController#show as HTML
+  Parameters: {"id"=>"19"}
+  [1m[36mImage Load (0.8ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:7
+  Rendering images/show.html.erb within layouts/application
+  [1m[36mImage Load (0.6ms)[0m  [1m[34mSELECT  "images".* FROM "images" ORDER BY "images"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:4
+  [1m[36mImage Load (0.6ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE (images.id < 19 ) ORDER BY created_at DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/image.rb:5
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT  "images".* FROM "images" ORDER BY "images"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:8
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE (images.id > 19 ) ORDER BY created_at asc LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/image.rb:8
+  Rendered images/show.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 30ms (Views: 23.2ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/images/18" for ::1 at 2019-05-12 11:52:07 -0400
+Processing by ImagesController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mImage Load (1.2ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:7
+  Rendering images/show.html.erb within layouts/application
+  [1m[36mImage Load (0.6ms)[0m  [1m[34mSELECT  "images".* FROM "images" ORDER BY "images"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:4
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE (images.id < 18 ) ORDER BY created_at DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/image.rb:5
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT  "images".* FROM "images" ORDER BY "images"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:8
+  [1m[36mImage Load (0.6ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE (images.id > 18 ) ORDER BY created_at asc LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/image.rb:8
+  Rendered images/show.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 31ms (Views: 25.4ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/images/17" for ::1 at 2019-05-12 11:52:07 -0400
+Processing by ImagesController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[36mImage Load (1.2ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:7
+  Rendering images/show.html.erb within layouts/application
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT  "images".* FROM "images" ORDER BY "images"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:4
+  [1m[36mImage Load (0.8ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE (images.id < 17 ) ORDER BY created_at DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/image.rb:5
+  [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT  "images".* FROM "images" ORDER BY "images"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:8
+  [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE (images.id > 17 ) ORDER BY created_at asc LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/image.rb:8
+  Rendered images/show.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 29ms (Views: 23.8ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/images/16" for ::1 at 2019-05-12 11:52:07 -0400
+Processing by ImagesController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mImage Load (1.4ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:7
+  Rendering images/show.html.erb within layouts/application
+  [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT  "images".* FROM "images" ORDER BY "images"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:4
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE (images.id < 16 ) ORDER BY created_at DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/image.rb:5
+  [1m[36mImage Load (0.2ms)[0m  [1m[34mSELECT  "images".* FROM "images" ORDER BY "images"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:8
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE (images.id > 16 ) ORDER BY created_at asc LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/image.rb:8
+  Rendered images/show.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 44ms (Views: 39.3ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/images" for ::1 at 2019-05-12 11:52:08 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  ↳ app/views/images/index.html.erb:19
+  Rendered images/index.html.erb within layouts/application (32.4ms)
+Completed 200 OK in 44ms (Views: 42.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/images/comments" for ::1 at 2019-05-12 11:52:13 -0400
+Processing by ImagesController#show as HTML
+  Parameters: {"id"=>"comments"}
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:7
+Completed 404 Not Found in 2ms (ActiveRecord: 0.4ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Image with 'id'=comments):
+  
+app/controllers/images_controller.rb:7:in `show'
+Started GET "/images/1/comments" for ::1 at 2019-05-12 11:52:21 -0400
+Processing by CommentsController#index as HTML
+  Parameters: {"image_id"=>"1"}
+  Rendering comments/index.html.erb within layouts/application
+  Rendered comments/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 16ms (Views: 14.0ms | ActiveRecord: 0.0ms)
+
+
