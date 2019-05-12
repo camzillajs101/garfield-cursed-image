@@ -9,6 +9,6 @@
     <%= link_to "Next >", Image.get_next_image(@image), class: "nav_btn" %>
   <% end %>
   <h1 class="show_text"><i>Image <%= @image.id %>: <%= @image.name %></i></h1>
-  <h4 class="show_text">Added by <%= @image.author %></h4>
+  <h4 class="show_text">Added by <%= @image.author %> on <%= Date::MONTHNAMES[@image.created_at.month] %> <%= @image.created_at.day %>, <%= @image.created_at.year %></h4>
   <%= image_tag(@image.path, alt: @image.name, class: "show_image") %>
 </center>
