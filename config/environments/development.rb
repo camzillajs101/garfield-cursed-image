@@ -73,7 +73,7 @@ Rails.application.configure do
   address:              'smtp.gmail.com',
   port:                 587,
   domain:               'garfieldcursedimage.org',
-  user_name:            'Jon Arbuckle',
+  user_name:            'Garfield Arbuckle',
   password:             'Autotransformer5',
   authentication:       'plain',
   enable_starttls_auto: true  }
