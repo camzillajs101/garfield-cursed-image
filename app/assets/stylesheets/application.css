@@ -22,6 +22,10 @@
   font-family: "Didot";
   src: url(/assets/Didot.ttc);
 }
+@font-face {
+  font-family: "Garfield";
+  src: url(/assets/Garfield.ttf);
+}
 a {
   color: rgb(0,160,255);
   text-decoration: none;
