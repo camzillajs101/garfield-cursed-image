@@ -16,15 +16,15 @@
 
 @font-face {
   font-family: "Baskerville";
-  src: url(/assets/Baskerville.ttc);
+  src: url('Baskerville.ttc');
 }
 @font-face {
   font-family: "Didot";
-  src: url(/assets/Didot.ttc);
+  src: url('Didot.ttc');
 }
 @font-face {
   font-family: "Garfield";
-  src: url(/assets/Garfield.ttf);
+  src: url('Garfield.ttf') format('truetype');
 }
 a {
   color: rgb(0,160,255);
