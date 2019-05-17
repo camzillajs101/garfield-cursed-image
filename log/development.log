@@ -7786,3 +7786,59 @@ Processing by RequestsController#new as HTML
 Completed 200 OK in 19ms (Views: 16.9ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for ::1 at 2019-05-16 21:43:15 -0400
+  [1m[35m (5.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/camilomason/.rvm/gems/ruby-2.6.2/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (7.6ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  ↳ app/views/images/index.html.erb:19
+  Rendered images/index.html.erb within layouts/application (1392.0ms)
+Completed 200 OK in 1446ms (Views: 1412.1ms | ActiveRecord: 23.8ms)
+
+
+Started GET "/" for ::1 at 2019-05-16 21:48:16 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (0.9ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  ↳ app/views/images/index.html.erb:19
+  Rendered images/index.html.erb within layouts/application (53.9ms)
+Completed 200 OK in 77ms (Views: 65.1ms | ActiveRecord: 8.6ms)
+
+
+Started GET "/" for ::1 at 2019-05-16 21:48:25 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (0.9ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  ↳ app/views/images/index.html.erb:19
+  Rendered images/index.html.erb within layouts/application (35.6ms)
+Completed 200 OK in 49ms (Views: 47.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2019-05-16 21:48:27 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (0.7ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  ↳ app/views/images/index.html.erb:19
+  Rendered images/index.html.erb within layouts/application (32.0ms)
+Completed 200 OK in 49ms (Views: 46.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2019-05-16 21:48:27 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (0.7ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  ↳ app/views/images/index.html.erb:19
+  Rendered images/index.html.erb within layouts/application (47.7ms)
+Completed 200 OK in 63ms (Views: 61.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2019-05-16 21:48:29 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (0.6ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  ↳ app/views/images/index.html.erb:19
+  Rendered images/index.html.erb within layouts/application (29.5ms)
+Completed 200 OK in 44ms (Views: 42.0ms | ActiveRecord: 0.6ms)
+
+
