@@ -22,6 +22,22 @@
   font-family: "Didot";
   src: url('Didot.ttc');
 }
+/* lato progression
+hairline | thin | light | regular | medium | semibold | bold | heavy
+*/
+@font-face {
+  font-family: "Lato-Light";
+  src: url('Lato/Lato-Light.ttf');
+}
+@font-face {
+  font-family: "Lato";
+  src: url('Lato/Lato-Regular.ttf');
+}
+@font-face {
+  font-family: "Lato-MediumItalic";
+  src: url('Lato/Lato-MediumItalic.ttf');
+}
+
 a {
   color: rgb(0,160,255);
   text-decoration: none;

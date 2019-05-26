@@ -3,9 +3,9 @@
 one:
   path: MyString
   name: MyString
-  author: MyString
+  email: MyString
 
 two:
   path: MyString
   name: MyString
-  author: MyString
+  email: MyString
