@@ -9117,3 +9117,124 @@ Processing by ImagesController#index as HTML
 Completed 200 OK in 1467ms (Views: 1459.1ms | ActiveRecord: 2.2ms)
 
 
+Started GET "/" for ::1 at 2019-05-26 12:20:04 -0400
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/camilomason/.rvm/gems/ruby-2.6.2/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  ↳ app/views/images/index.html.erb:19
+  Rendered images/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 1343ms (Views: 1333.2ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/" for ::1 at 2019-05-26 12:20:40 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (0.9ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  ↳ app/views/images/index.html.erb:19
+  Rendered images/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 89ms (Views: 86.6ms | ActiveRecord: 0.9ms)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/Lato-MediumItalic.ttf"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.2.3) lib/active_support/logger_silence.rb:21:in `silence'
+activesupport (5.2.3) lib/active_support/logger.rb:65:in `block (3 levels) in broadcast'
+activesupport (5.2.3) lib/active_support/logger_silence.rb:21:in `silence'
+activesupport (5.2.3) lib/active_support/logger.rb:63:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+webpacker (4.0.2) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/assets/Lato-Light.ttf"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.2.3) lib/active_support/logger_silence.rb:21:in `silence'
+activesupport (5.2.3) lib/active_support/logger.rb:65:in `block (3 levels) in broadcast'
+activesupport (5.2.3) lib/active_support/logger_silence.rb:21:in `silence'
+activesupport (5.2.3) lib/active_support/logger.rb:63:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+webpacker (4.0.2) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2019-05-26 12:22:10 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  ↳ app/views/images/index.html.erb:19
+  Rendered images/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 20ms (Views: 18.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-05-26 12:22:18 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  ↳ app/views/images/index.html.erb:19
+  Rendered images/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 21ms (Views: 19.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-05-26 12:22:21 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (0.7ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  ↳ app/views/images/index.html.erb:19
+  Rendered images/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 18ms (Views: 15.4ms | ActiveRecord: 0.7ms)
+
+
