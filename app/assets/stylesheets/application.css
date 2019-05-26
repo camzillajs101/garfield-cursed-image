@@ -16,26 +16,26 @@
 
 @font-face {
   font-family: "Baskerville";
-  src: font-url('assets/Baskerville.ttc');
+  src: font-url('/assets/Baskerville.ttc');
 }
 @font-face {
   font-family: "Didot";
-  src: font-url('assets/Didot.ttc');
+  src: font-url('/assets/Didot.ttc');
 }
 /* lato progression
 hairline | thin | light | regular | medium | semibold | bold | heavy
 */
 @font-face {
   font-family: "Lato-Light";
-  src: font-url('assets/Lato/Lato-Light.ttf');
+  src: font-url('/assets/Lato/Lato-Light.ttf');
 }
 @font-face {
   font-family: "Lato";
-  src: font-url('assets/Lato/Lato-Regular.ttf');
+  src: font-url('/assets/Lato/Lato-Regular.ttf');
 }
 @font-face {
   font-family: "Lato-MediumItalic";
-  src: font-url('assets/Lato/Lato-MediumItalic.ttf');
+  src: font-url('/assets/Lato/Lato-MediumItalic.ttf');
 }
 
 a {
