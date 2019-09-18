@@ -15,7 +15,7 @@ blockquote, p {
   font-family: "Baskerville";
   line-height: 25px;
 }
-h1, h2 {
+h1, h2, h3, h4 {
   font-family: "Didot";
 }
 img:not(.icon) {
@@ -24,5 +24,16 @@ img:not(.icon) {
 }
 img.icon {
   height: 20px;
-  width: auto;
+}
+img.show_img {
+  width: 400px;
+}
+.nav_btn {
+  text-align: center;
+  border: 1px solid gray;
+  border-radius: 2px;
+  padding: 5px;
+  font-family: "Baskerville";
+  padding-left: 20px;
+  padding-right: 20px;
 }

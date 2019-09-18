@@ -17,7 +17,7 @@
 <!-- IMAGES -->
 <center>
 <% @images.each do |f| %>
-  <%= image_tag(f.path, size: "300x300", title: f.name) %>
+  <%= link_to image_tag(f.path, size: "300x300", title: f.name), image_path(f.id) %>
 <% end %>
 </center>
 
@@ -28,10 +28,4 @@
   as a side project to work on in my spare time. I find these images mostly on online browsing sites, or a friend sends
   them to me. I do not intend to have any monetary gain from it. Thank you.
 </blockquote>
-<br><hr>
-<footer>
-  <p><a href="mailto:info@garfieldcursedimage.org">Contact</a>&nbsp;<%= image_tag('other/email.png', class: "icon") %>&nbsp;&nbsp;&#8226;&nbsp;
-    <a href="https://github.com/camzillajs101/garfield-cursed-image">Github</a>&nbsp;<%= image_tag('other/github.png', class: "icon") %>&nbsp;&nbsp;&#8226;&nbsp;
-    This site was created from scratch entirely with Ruby on Rails. I'm kinda proud of it.
-  </p>
-</footer>
+<br>
