@@ -1,4 +1,24 @@
-# garfield-cursed-image
-for elina's birthday! garfield cursed images
+# README
 
-Created using Ruby on Rails. Was originally made with HTML and JS, but I changed it because whatever. Yeah.
+This README would normally document whatever steps are necessary to get the
+application up and running.
+
+Things you may want to cover:
+
+* Ruby version
+
+* System dependencies
+
+* Configuration
+
+* Database creation
+
+* Database initialization
+
+* How to run the test suite
+
+* Services (job queues, cache servers, search engines, etc.)
+
+* Deployment instructions
+
+* ...

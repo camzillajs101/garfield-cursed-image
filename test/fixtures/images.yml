@@ -3,9 +3,9 @@
 one:
   path: MyString
   name: MyString
-  author: MyString
+  nsfw: false
 
 two:
   path: MyString
   name: MyString
-  author: MyString
+  nsfw: false

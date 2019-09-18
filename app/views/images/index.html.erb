@@ -1,10 +1,10 @@
-<!-- this is the root/welcome page as well as index -->
 <% content_for :title, "why are you here" %>
 
 <center>
-  <h2 class="main_text">Welcome to the</h2>
-  <h1 class="main_text">Garfield Cursed Image Gallery!</h1>
+  <h2>Welcome to the</h2>
+  <h1>Garfield Cursed Image Gallery!</h1>
 </center>
+
 <br>
 <blockquote>
   Over the past few months, I've been collecting so-called "cursed images" of Garfield, everyone's favorite Monday-hating
@@ -17,6 +17,21 @@
 <!-- IMAGES -->
 <center>
 <% @images.each do |f| %>
-  <%= link_to image_tag(f.path, size: "300x300", title: f.name, class: "index_image"), image_path(f.id) %>
+  <%= image_tag(f.path, size: "300x300", title: f.name) %>
 <% end %>
 </center>
+
+<br><hr><br>
+<blockquote>
+  <b><i>FULL DISCLAIMER:</i></b> I am not gaining any money whatsoever from this site, or from the images on this site.
+  If you see an image here that you created, that's great! But please keep in mind that this site was created only for fun,
+  as a side project to work on in my spare time. I find these images mostly on online browsing sites, or a friend sends
+  them to me. I do not intend to have any monetary gain from it. Thank you.
+</blockquote>
+<br><hr>
+<footer>
+  <p><a href="mailto:info@garfieldcursedimage.org">Contact</a>&nbsp;<%= image_tag('other/email.png', class: "icon") %>&nbsp;&nbsp;&#8226;&nbsp;
+    <a href="https://github.com/camzillajs101/garfield-cursed-image">Github</a>&nbsp;<%= image_tag('other/github.png', class: "icon") %>&nbsp;&nbsp;&#8226;&nbsp;
+    This site was created from scratch entirely with Ruby on Rails. I'm kinda proud of it.
+  </p>
+</footer>

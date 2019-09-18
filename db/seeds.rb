@@ -6,7 +6,6 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-# images here when I started the rails app
 Image.create(path: "amalgam.jpg", name: "Amalgam", nsfw: false)
 Image.create(path: "blood.jpg", name: "Blood", nsfw: false)
 Image.create(path: "brithday.jpg", name: "Brithday", nsfw: false)
