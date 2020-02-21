@@ -28,6 +28,9 @@ img.icon {
 img.show_img {
   width: 400px;
 }
+img:hover {
+  border: 1px solid lightblue;
+}
 .nav_btn {
   text-align: center;
   border: 1px solid gray;
