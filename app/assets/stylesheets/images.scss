@@ -6,10 +6,6 @@ a {
   color: rgb(0,160,235);
   text-decoration: none;
 }
-a:hover {
-  color: rgb(0,120,235);
-  text-decoration: underline;
-}
 blockquote, p {
   text-indent: 20px;
   font-family: "Baskerville";
@@ -18,17 +14,14 @@ blockquote, p {
 h1, h2, h3, h4 {
   font-family: "Didot";
 }
-img:not(.icon) {
+.garf {
   margin: 20px;
   border: 1px solid gray;
 }
-img.icon {
-  height: 20px;
-}
-img.show_img {
+.garf_show {
   width: 400px;
 }
-img:hover {
+.garf:hover {
   border: 1px solid lightblue;
 }
 .nav_btn {
@@ -39,4 +32,10 @@ img:hover {
   font-family: "Baskerville";
   padding-left: 20px;
   padding-right: 20px;
+}
+.icon {
+  height: 20px;
+  width: auto;
+  position: relative;
+  top: 5px;
 }

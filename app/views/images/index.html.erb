@@ -20,7 +20,7 @@
 <!-- IMAGES -->
 <center>
 <% @images.each do |f| %>
-  <%= link_to image_tag(f.path, size: "300x300", title: f.name), image_path(f.id) %>
+  <%= link_to image_tag(f.path, size: "300x300", title: f.name, :class => "garf"), image_path(f.id) %>
 <% end %>
 </center>
 

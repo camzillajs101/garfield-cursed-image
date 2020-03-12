@@ -9,5 +9,5 @@
 
   <h1><%= @image.id %>: <%= @image.name %></h1>
   <h4>Added on <%= Date::MONTHNAMES[@image.created_at.month] %> <%= @image.created_at.day %>, <%= @image.created_at.year %></h4>
-  <%= image_tag(@image.path, title: @image.name, class: 'show_img') %>
+  <%= image_tag(@image.path, title: @image.name, class: 'garf_show') %>
 </center>
