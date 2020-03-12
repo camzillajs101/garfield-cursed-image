@@ -1,6 +1,6 @@
 class ImagesController < ApplicationController
   def index
-    @images = Image.all
+    @images = Image.order(id: :asc)
   end
 
   def show

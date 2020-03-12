@@ -6,9 +6,13 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+Image.destroy_all
+ActiveRecord::Base.connection.reset_pk_sequence!('images')
+
 Image.create(path: "amalgam.jpg", name: "Amalgam", nsfw: false)
 Image.create(path: "blood.jpg", name: "Blood", nsfw: false)
 Image.create(path: "brithday.jpg", name: "Brithday", nsfw: false)
+Image.create(path: "bullets_dont_work.jpg", name: "Bullets Don't Work", nsfw: false)
 Image.create(path: "dab.jpg", name: "Dab", nsfw: false)
 Image.create(path: "emotions.jpg", name: "Emotions", nsfw: false)
 Image.create(path: "extra_thicc.jpg", name: "Extra T h i c c", nsfw: false)
@@ -38,6 +42,7 @@ Image.create(path: "number_5.jpg", name: "Number 5", nsfw: true)
 Image.create(path: "pepe.jpg", name: "Pepe", nsfw: false)
 Image.create(path: "pizza.jpg", name: "Pizza", nsfw: false)
 Image.create(path: "poke.jpg", name: "Poké", nsfw: false)
+Image.create(path: "post_mortem_decay.jpg", name: "Post-Mortem Decay", nsfw: false)
 Image.create(path: "potatofield.jpg", name: "Potatofield", nsfw: false)
 Image.create(path: "quoi.jpg", name: "Incineroar", nsfw: false)
 Image.create(path: "require.jpg", name: "He Requires", nsfw: false)
