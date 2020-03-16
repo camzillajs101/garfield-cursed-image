@@ -24,16 +24,15 @@
 
   <body>
     <%= yield %>
+    <footer>
+      <hr><p>
+        v1.1 &#8226;
+        <a href="https://github.com/camzillajs101/garfield-cursed-image" target="_blank" class="a_icon">
+          <%= image_tag('other/github.png', class: "icon") %></a>&nbsp;
+        <a href="mailto:info@garfieldcursedimage.org" class="a_icon">
+          <%= image_tag('other/email.png', class: "icon") %></a>  &#8226;
+        This site was created with Ruby on Rails. I'm kinda proud of it.
+      </p>
+    </footer>
   </body>
-  <footer> <!-- footer on every page -->
-    <hr>
-    <p>
-      v1.1 &#8226;
-      <a href="https://github.com/camzillajs101/garfield-cursed-image" target="_blank" class="a_icon">
-        <%= image_tag('other/github.png', class: "icon") %></a>&nbsp;
-      <a href="mailto:info@garfieldcursedimage.org" class="a_icon">
-        <%= image_tag('other/email.png', class: "icon") %></a>  &#8226;
-      This site was created with Ruby on Rails. I'm kinda proud of it.
-    </p>
-  </footer>
 </html>
