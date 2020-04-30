@@ -12684,3 +12684,356 @@ Processing by ImagesController#show as HTML
 Completed 200 OK in 33ms (Views: 24.4ms | ActiveRecord: 3.0ms)
 
 
+Started GET "/" for ::1 at 2020-04-30 12:15:46 -0400
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/camilomason/.rvm/gems/ruby-2.6.2/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (3.1ms)[0m  [1m[34mSELECT "images".* FROM "images" ORDER BY "images"."id" ASC[0m
+  ↳ app/views/images/index.html.erb:19
+  Rendered images/index.html.erb within layouts/application (3348.3ms)
+Completed 200 OK in 3448ms (Views: 3418.0ms | ActiveRecord: 14.4ms)
+
+
+Started GET "/" for ::1 at 2020-04-30 12:16:32 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (1.4ms)[0m  [1m[34mSELECT "images".* FROM "images" ORDER BY "images"."id" ASC[0m
+  ↳ app/views/images/index.html.erb:21
+  Rendered images/index.html.erb within layouts/application (59.0ms)
+Completed 200 OK in 103ms (Views: 96.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for ::1 at 2020-04-30 12:16:47 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (0.6ms)[0m  [1m[34mSELECT "images".* FROM "images" ORDER BY "images"."id" ASC[0m
+  ↳ app/views/images/index.html.erb:24
+  Rendered images/index.html.erb within layouts/application (109.1ms)
+Completed 200 OK in 141ms (Views: 137.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2020-04-30 12:20:07 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT "images".* FROM "images" ORDER BY "images"."id" ASC[0m
+  ↳ app/views/images/index.html.erb:24
+  Rendered images/index.html.erb within layouts/application (1472.4ms)
+Completed 200 OK in 1496ms (Views: 1493.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2020-04-30 12:20:25 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT "images".* FROM "images" ORDER BY "images"."id" ASC[0m
+  ↳ app/views/images/index.html.erb:24
+  Rendered images/index.html.erb within layouts/application (98.8ms)
+Completed 200 OK in 125ms (Views: 121.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2020-04-30 12:21:16 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (0.6ms)[0m  [1m[34mSELECT "images".* FROM "images" ORDER BY "images"."id" ASC[0m
+  ↳ app/views/images/index.html.erb:24
+  Rendered images/index.html.erb within layouts/application (87.8ms)
+Completed 200 OK in 115ms (Views: 113.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2020-04-30 12:21:49 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (0.7ms)[0m  [1m[34mSELECT "images".* FROM "images" ORDER BY "images"."id" ASC[0m
+  ↳ app/views/images/index.html.erb:25
+  Rendered images/index.html.erb within layouts/application (98.1ms)
+Completed 200 OK in 124ms (Views: 120.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2020-04-30 12:22:02 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (0.6ms)[0m  [1m[34mSELECT "images".* FROM "images" ORDER BY "images"."id" ASC[0m
+  ↳ app/views/images/index.html.erb:25
+  Rendered images/index.html.erb within layouts/application (70.4ms)
+Completed 200 OK in 120ms (Views: 114.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2020-04-30 12:22:10 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (0.6ms)[0m  [1m[34mSELECT "images".* FROM "images" ORDER BY "images"."id" ASC[0m
+  ↳ app/views/images/index.html.erb:25
+  Rendered images/index.html.erb within layouts/application (110.3ms)
+Completed 200 OK in 135ms (Views: 132.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2020-04-30 12:22:18 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (1.1ms)[0m  [1m[34mSELECT "images".* FROM "images" ORDER BY "images"."id" ASC[0m
+  ↳ app/views/images/index.html.erb:25
+  Rendered images/index.html.erb within layouts/application (98.2ms)
+Completed 200 OK in 122ms (Views: 119.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for ::1 at 2020-04-30 12:22:41 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (0.7ms)[0m  [1m[34mSELECT "images".* FROM "images" ORDER BY "images"."id" ASC[0m
+  ↳ app/views/images/index.html.erb:25
+  Rendered images/index.html.erb within layouts/application (63.4ms)
+Completed 200 OK in 120ms (Views: 114.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2020-04-30 12:23:47 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT "images".* FROM "images" ORDER BY "images"."id" ASC[0m
+  ↳ app/views/images/index.html.erb:24
+  Rendered images/index.html.erb within layouts/application (55.8ms)
+Completed 200 OK in 78ms (Views: 75.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2020-04-30 12:24:02 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (0.7ms)[0m  [1m[34mSELECT "images".* FROM "images" ORDER BY "images"."id" ASC[0m
+  ↳ app/views/images/index.html.erb:24
+  Rendered images/index.html.erb within layouts/application (64.0ms)
+Completed 200 OK in 93ms (Views: 90.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2020-04-30 12:28:06 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT "images".* FROM "images" ORDER BY "images"."id" ASC[0m
+  ↳ app/views/images/index.html.erb:24
+  Rendered images/index.html.erb within layouts/application (1661.3ms)
+Completed 200 OK in 1739ms (Views: 1734.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2020-04-30 12:29:23 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT "images".* FROM "images" ORDER BY "images"."id" ASC[0m
+  ↳ app/views/images/index.html.erb:24
+  Rendered images/index.html.erb within layouts/application (61.2ms)
+Completed 200 OK in 90ms (Views: 87.4ms | ActiveRecord: 0.5ms)
+
+
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2083386503135027895)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to AddFeaturedToImages (20200430163303)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (6.2ms)[0m  [1m[35mALTER TABLE "images" ADD "featured" boolean[0m
+  ↳ db/migrate/20200430163303_add_featured_to_images.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200430163303"]]
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (1.6ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(2083386503135027895)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" != $1 LIMIT $2[0m  [["nsfw", false], ["LIMIT", 11]]
+Started GET "/.well-known/pki-validation/E8DB7BA1796C667107D79492B04DF9FA.txt" for ::1 at 2020-04-30 12:41:09 -0400
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/camilomason/.rvm/gems/ruby-2.6.2/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by ImagesController#ssl as TEXT
+  Rendering app/assets/files/E8DB7BA1796C667107D79492B04DF9FA.txt
+  Rendered app/assets/files/E8DB7BA1796C667107D79492B04DF9FA.txt (0.3ms)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mImage Create (5.2ms)[0m  [1m[32mINSERT INTO "images" ("path", "name", "nsfw", "created_at", "updated_at", "featured") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["path", "featured/stay_safe.jpg"], ["name", "Stay Safe"], ["nsfw", false], ["created_at", "2020-04-30 16:45:56.220388"], ["updated_at", "2020-04-30 16:45:56.220388"], ["featured", true]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/" for ::1 at 2020-04-30 12:48:39 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."featured" = $1 ORDER BY "images"."id" ASC[0m  [["featured", true]]
+  ↳ app/views/images/index.html.erb:20
+  [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."featured" != $1 ORDER BY "images"."id" ASC[0m  [["featured", true]]
+  ↳ app/views/images/index.html.erb:27
+  Rendered images/index.html.erb within layouts/application (15.8ms)
+Completed 200 OK in 52ms (Views: 32.5ms | ActiveRecord: 9.6ms)
+
+
+Started GET "/" for ::1 at 2020-04-30 12:49:10 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."featured" = $1 ORDER BY "images"."id" ASC[0m  [["featured", true]]
+  ↳ app/views/images/index.html.erb:20
+  [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."featured" != $1 ORDER BY "images"."id" ASC[0m  [["featured", true]]
+  ↳ app/views/images/index.html.erb:28
+  Rendered images/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 24ms (Views: 20.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2020-04-30 12:50:05 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."featured" != $1 ORDER BY "images"."id" ASC[0m  [["featured", true]]
+  ↳ app/views/images/index.html.erb:26
+  Rendered images/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 25ms (Views: 21.9ms | ActiveRecord: 0.4ms)
+
+
+  [1m[36mImage Load (0.9ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."featured" != $1 LIMIT $2[0m  [["featured", true], ["LIMIT", 11]]
+  [1m[36mImage Load (0.7ms)[0m  [1m[34mSELECT  "images".* FROM "images" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mImage Load (1.1ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."featured" = $1 LIMIT $2[0m  [["featured", true], ["LIMIT", 11]]
+Started GET "/" for ::1 at 2020-04-30 12:52:14 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."featured" = $1 ORDER BY "images"."id" ASC[0m  [["featured", true]]
+  ↳ app/views/images/index.html.erb:20
+  [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT "images".* FROM "images" ORDER BY "images"."id" ASC[0m
+  ↳ app/views/images/index.html.erb:28
+  Rendered images/index.html.erb within layouts/application (78.4ms)
+Completed 200 OK in 130ms (Views: 122.6ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/" for ::1 at 2020-04-30 12:54:21 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT "images".* FROM "images" ORDER BY "images"."id" ASC[0m
+  ↳ app/views/images/index.html.erb:24
+  Rendered images/index.html.erb within layouts/application (78.5ms)
+Completed 200 OK in 104ms (Views: 97.3ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/" for ::1 at 2020-04-30 12:54:38 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (0.6ms)[0m  [1m[34mSELECT "images".* FROM "images" ORDER BY "images"."id" ASC[0m
+  ↳ app/views/images/index.html.erb:26
+  Rendered images/index.html.erb within layouts/application (94.6ms)
+Completed 200 OK in 120ms (Views: 116.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2020-04-30 12:54:47 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (0.8ms)[0m  [1m[34mSELECT "images".* FROM "images" ORDER BY "images"."id" ASC[0m
+  ↳ app/views/images/index.html.erb:26
+  Rendered images/index.html.erb within layouts/application (68.3ms)
+Completed 200 OK in 97ms (Views: 94.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2020-04-30 12:54:53 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (0.8ms)[0m  [1m[34mSELECT "images".* FROM "images" ORDER BY "images"."id" ASC[0m
+  ↳ app/views/images/index.html.erb:26
+  Rendered images/index.html.erb within layouts/application (83.6ms)
+Completed 200 OK in 129ms (Views: 126.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2020-04-30 12:54:56 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (0.6ms)[0m  [1m[34mSELECT "images".* FROM "images" ORDER BY "images"."id" ASC[0m
+  ↳ app/views/images/index.html.erb:26
+  Rendered images/index.html.erb within layouts/application (42.3ms)
+Completed 200 OK in 57ms (Views: 55.0ms | ActiveRecord: 0.6ms)
+
+
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mImage Destroy (1.4ms)[0m  [1m[31mDELETE FROM "images" WHERE "images"."id" = $1[0m  [["id", 61]]
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/" for ::1 at 2020-04-30 12:56:27 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (0.6ms)[0m  [1m[34mSELECT "images".* FROM "images" ORDER BY "images"."id" ASC[0m
+  ↳ app/views/images/index.html.erb:26
+  Rendered images/index.html.erb within layouts/application (70.0ms)
+Completed 200 OK in 122ms (Views: 118.8ms | ActiveRecord: 0.6ms)
+
+
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2083386503135027895)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to AddFeaturedToImages (20200430163303)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (4.2ms)[0m  [1m[35mALTER TABLE "images" DROP COLUMN "featured"[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.5ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20200430163303"]]
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(2083386503135027895)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/" for ::1 at 2020-04-30 12:57:25 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (0.8ms)[0m  [1m[34mSELECT "images".* FROM "images" ORDER BY "images"."id" ASC[0m
+  ↳ app/views/images/index.html.erb:26
+  Rendered images/index.html.erb within layouts/application (81.9ms)
+Completed 200 OK in 122ms (Views: 110.4ms | ActiveRecord: 6.1ms)
+
+
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2083386503135027895)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to AddFeaturedToImages (20200430163303)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[35mALTER TABLE "images" ADD "featured" boolean[0m
+  ↳ db/migrate/20200430163303_add_featured_to_images.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200430163303"]]
+  ↳ bin/rails:9
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(2083386503135027895)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2083386503135027895)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to AddFeaturedToImages (20200430163303)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (1.0ms)[0m  [1m[35mALTER TABLE "images" DROP COLUMN "featured"[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.4ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20200430163303"]]
+  ↳ bin/rails:9
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(2083386503135027895)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
