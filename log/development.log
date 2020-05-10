@@ -14259,3 +14259,120 @@ Completed 200 OK in 26ms (Views: 20.1ms | ActiveRecord: 3.4ms)
   [1m[36mImage Load (0.7ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 59], ["LIMIT", 1]]
   [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 60], ["LIMIT", 1]]
   [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 61], ["LIMIT", 1]]
+Started GET "/" for ::1 at 2020-05-10 16:28:18 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (7.4ms)[0m  [1m[34mSELECT "images".* FROM "images" ORDER BY "images"."id" ASC[0m
+  ↳ app/views/images/index.html.erb:27
+  Rendered images/index.html.erb within layouts/application (449.0ms)
+Completed 200 OK in 473ms (Views: 464.0ms | ActiveRecord: 7.4ms)
+
+
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mImage Create (5.3ms)[0m  [1m[32mINSERT INTO "images" ("path", "name", "nsfw", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["path", "hell.jpg"], ["name", "Hell"], ["nsfw", false], ["created_at", "2020-05-10 20:40:55.499802"], ["updated_at", "2020-05-10 20:40:55.499802"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mImage Create (0.3ms)[0m  [1m[32mINSERT INTO "images" ("path", "name", "nsfw", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["path", "cockfield.jpg"], ["name", "Cockfield"], ["nsfw", true], ["created_at", "2020-05-10 20:40:55.508266"], ["updated_at", "2020-05-10 20:40:55.508266"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mImage Create (0.3ms)[0m  [1m[32mINSERT INTO "images" ("path", "name", "nsfw", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["path", "gremlin.jpg"], ["name", "Gremlin"], ["nsfw", false], ["created_at", "2020-05-10 20:40:55.510134"], ["updated_at", "2020-05-10 20:40:55.510134"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mImage Create (0.3ms)[0m  [1m[32mINSERT INTO "images" ("path", "name", "nsfw", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["path", "lingerie.jpg"], ["name", "Lingerie"], ["nsfw", true], ["created_at", "2020-05-10 20:40:55.511912"], ["updated_at", "2020-05-10 20:40:55.511912"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mImage Create (0.3ms)[0m  [1m[32mINSERT INTO "images" ("path", "name", "nsfw", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["path", "gothfield.jpg"], ["name", "Gothfield"], ["nsfw", false], ["created_at", "2020-05-10 20:40:55.513493"], ["updated_at", "2020-05-10 20:40:55.513493"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mImage Create (0.2ms)[0m  [1m[32mINSERT INTO "images" ("path", "name", "nsfw", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["path", "woman.jpg"], ["name", "Woman"], ["nsfw", true], ["created_at", "2020-05-10 20:40:55.514981"], ["updated_at", "2020-05-10 20:40:55.514981"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mImage Create (0.3ms)[0m  [1m[32mINSERT INTO "images" ("path", "name", "nsfw", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["path", "egirl.jpg"], ["name", "E-Girl"], ["nsfw", false], ["created_at", "2020-05-10 20:40:55.519511"], ["updated_at", "2020-05-10 20:40:55.519511"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mImage Create (0.3ms)[0m  [1m[32mINSERT INTO "images" ("path", "name", "nsfw", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["path", "jojo.jpg"], ["name", "Jojo"], ["nsfw", false], ["created_at", "2020-05-10 20:40:55.521771"], ["updated_at", "2020-05-10 20:40:55.521771"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mImage Create (0.3ms)[0m  [1m[32mINSERT INTO "images" ("path", "name", "nsfw", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["path", "abstract.jpg"], ["name", "Abstract"], ["nsfw", true], ["created_at", "2020-05-10 20:40:55.523927"], ["updated_at", "2020-05-10 20:40:55.523927"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/" for ::1 at 2020-05-10 16:41:12 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (1.7ms)[0m  [1m[34mSELECT "images".* FROM "images" ORDER BY "images"."id" ASC[0m
+  ↳ app/views/images/index.html.erb:27
+  Rendered images/index.html.erb within layouts/application (2192.1ms)
+Completed 200 OK in 2248ms (Views: 2244.7ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/images/69" for ::1 at 2020-05-10 16:41:20 -0400
+Processing by ImagesController#show as HTML
+  Parameters: {"id"=>"69"}
+  [1m[36mImage Load (1.0ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:7
+  Rendering images/show.html.erb within layouts/application
+  [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT  "images".* FROM "images" ORDER BY "images"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:4
+  [1m[36mImage Load (1.3ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE (images.id < 69 ) ORDER BY created_at DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/image.rb:3
+  [1m[36mImage Load (0.6ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE (images.id > 69 ) ORDER BY created_at asc LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/image.rb:6
+  [1m[36mImage Load (0.2ms)[0m  [1m[34mSELECT  "images".* FROM "images" ORDER BY "images"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:8
+  Rendered images/show.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 30ms (Views: 21.4ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/images/70" for ::1 at 2020-05-10 16:41:26 -0400
+Processing by ImagesController#show as HTML
+  Parameters: {"id"=>"70"}
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 70], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:7
+  Rendering images/show.html.erb within layouts/application
+  [1m[36mImage Load (0.8ms)[0m  [1m[34mSELECT  "images".* FROM "images" ORDER BY "images"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:4
+  [1m[36mImage Load (0.7ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE (images.id < 70 ) ORDER BY created_at DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/image.rb:3
+  [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE (images.id > 70 ) ORDER BY created_at asc LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/image.rb:6
+  [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT  "images".* FROM "images" ORDER BY "images"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:8
+  Rendered images/show.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 31ms (Views: 24.0ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/images/68" for ::1 at 2020-05-10 16:41:30 -0400
+Processing by ImagesController#show as HTML
+  Parameters: {"id"=>"68"}
+  [1m[36mImage Load (0.6ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:7
+  Rendering images/show.html.erb within layouts/application
+  [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT  "images".* FROM "images" ORDER BY "images"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:4
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE (images.id < 68 ) ORDER BY created_at DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/image.rb:3
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE (images.id > 68 ) ORDER BY created_at asc LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/image.rb:6
+  [1m[36mImage Load (0.2ms)[0m  [1m[34mSELECT  "images".* FROM "images" ORDER BY "images"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:8
+  Rendered images/show.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 31ms (Views: 25.4ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/images/67" for ::1 at 2020-05-10 16:41:35 -0400
+Processing by ImagesController#show as HTML
+  Parameters: {"id"=>"67"}
+  [1m[36mImage Load (1.0ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 67], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:7
+  Rendering images/show.html.erb within layouts/application
+  [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT  "images".* FROM "images" ORDER BY "images"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:4
+  [1m[36mImage Load (0.6ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE (images.id < 67 ) ORDER BY created_at DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/image.rb:3
+  [1m[36mImage Load (0.6ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE (images.id > 67 ) ORDER BY created_at asc LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/image.rb:6
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT  "images".* FROM "images" ORDER BY "images"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:8
+  Rendered images/show.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 53ms (Views: 47.3ms | ActiveRecord: 2.9ms)
+
+
