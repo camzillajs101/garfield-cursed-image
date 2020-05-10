@@ -59,3 +59,13 @@ Image.create(path: "what.jpg", name: "What", nsfw: false)
 Image.create(path: "wii.jpg", name: "Wii", nsfw: false)
 Image.create(path: "yin.jpg", name: "Yin", nsfw: false)
 Image.create(path: "zero_bids.jpg", name: "Zero Bids", nsfw: false)
+Image.create(path: "slutfield.jpg", name: "Slutfield", nsfw: true);
+Image.create(path: "yeah.jpg", name: "Yeah", nsfw: false);
+Image.create(path: "jonitine.jpg", name: "Jonitine", nsfw: false);
+Image.create(path: "cumjar.jpg", name: "Nothing to See Here", nsfw: false);
+Image.create(path: "jiggly.gif", name: "Jiggly Garf", nsfw: false);
+Image.create(path: "location.jpg", name: "Location of Lasagna", nsfw: false);
+Image.create(path: "omniscient.jpg", name: "Omniscient", nsfw: false);
+Image.create(path: "demongarf.jpg", name: "Demongarf", nsfw: false);
+Image.create(path: "armageddon.jpg", name: "Armageddon", nsfw: false);
+Image.create(path: "envy.jpg", name: "Envy", nsfw: false); 
