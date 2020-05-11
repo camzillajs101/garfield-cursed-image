@@ -16,9 +16,9 @@
 
 @font-face { /* basic text font */
   font-family: "Baskerville";
-  src: asset_url('Baskerville.ttc');
+  src: url('Baskerville.ttc');
 }
 @font-face { /* titles */
   font-family: "Didot";
-  src: asset_url('Didot.ttc');
+  src: url('Didot.ttc');
 }
