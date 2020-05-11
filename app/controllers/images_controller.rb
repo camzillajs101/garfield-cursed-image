@@ -5,7 +5,7 @@ class ImagesController < ApplicationController
   end
 
   def index_nsfw
-    @images = Image.where(nsfw: true)
+    @images = Image.where(nsfw: true).order(id: :asc)
   end
 
   def show

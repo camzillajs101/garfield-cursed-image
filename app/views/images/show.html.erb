@@ -1,11 +1,11 @@
 <% content_for :title, @image.name %>
 
 <center><br>
-  <%= link_to "≤", Image.first, class: "nav_btn" %>
-  <%= link_to "<", Image.get_previous_image(@image), class: "nav_btn" %>
+  <%= link_to "≤", Image.where(nsfw: false).first, class: "nav_btn" %>
+  <%= link_to "<", Image.where(nsfw: false).get_previous_image(@image), class: "nav_btn" %>
   <%= link_to "All", images_path, class: "nav_btn" %>
-  <%= link_to ">", Image.get_next_image(@image), class: "nav_btn" %>
-  <%= link_to "≥", Image.last, class: "nav_btn" %>
+  <%= link_to ">", Image.where(nsfw: false).get_next_image(@image), class: "nav_btn" %>
+  <%= link_to "≥", Image.where(nsfw: false).last, class: "nav_btn" %>
 
   <h1><%= @image.name %></h1>
   <!-- <h4>Added on <%= Date::MONTHNAMES[@image.created_at.month] %> <%= @image.created_at.day %>, <%= @image.created_at.year %></h4> -->
