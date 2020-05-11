@@ -40,3 +40,17 @@ h1, h2, h3, h4 {
   position: relative;
   top: 5px;
 }
+
+/* for nsfw page */
+#nsfw {
+  background-color: black;
+  color: white;
+}
+#back {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  border: 1px solid black;
+  font-family: "Baskerville";
+  font-size: 1em;
+}

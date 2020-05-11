@@ -24,6 +24,7 @@
 
   <body>
     <%= yield %>
+    <% if @footer %>
     <footer>
       <hr><p>
         v1.1 &#8226;
@@ -34,5 +35,6 @@
         This site was created with Ruby on Rails. I'm kinda proud of it.
       </p>
     </footer>
+    <% end %>
   </body>
 </html>

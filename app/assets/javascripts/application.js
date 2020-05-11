@@ -49,7 +49,7 @@ $(document).on('keydown',function(e){ // konami code
     a = true;
   }
   if (up && up2 && down && down2 && left && right && left2 && right2 && b && a && e.key === "Enter"){
-    alert("you did it!");
+    window.location = "/secretnsfwpage";
     up = false;
     up2 = false;
     down = false;
