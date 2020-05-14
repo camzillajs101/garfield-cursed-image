@@ -9,12 +9,10 @@ class ImagesController < ApplicationController
   end
 
   def show
-    @image = Image.find(params[:id])
     @footer = true;
   end
 
   def show_nsfw
-    @image = Image.find(params[:id])
   end
 
   def show_router
