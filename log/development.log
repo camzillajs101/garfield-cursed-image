@@ -26134,3 +26134,59 @@ Processing by ImagesController#index as HTML
 Completed 200 OK in 174ms (Views: 172.2ms | ActiveRecord: 0.5ms)
 
 
+Started GET "/" for ::1 at 2020-09-28 15:00:35 -0400
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/camilomason/.rvm/gems/ruby-2.6.2/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (0.8ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" ASC[0m  [["nsfw", false]]
+  ↳ app/views/images/index.html.erb:27
+  Rendered images/index.html.erb within layouts/application (1969.2ms)
+Completed 200 OK in 2009ms (Views: 1996.3ms | ActiveRecord: 6.6ms)
+
+
+Started GET "/" for ::1 at 2020-09-28 15:01:55 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (0.6ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" ASC[0m  [["nsfw", false]]
+  ↳ app/views/images/index.html.erb:27
+  Rendered images/index.html.erb within layouts/application (112.5ms)
+Completed 200 OK in 231ms (Views: 228.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/images/1" for ::1 at 2020-09-28 15:02:07 -0400
+Processing by ImagesController#show_router as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mImage Load (2.5ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:19
+  Rendering images/show.html.erb within layouts/application
+  [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" ASC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:4
+  [1m[36mImage Load (1.7ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 AND (images.id < 1 ) ORDER BY created_at DESC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/models/image.rb:3
+  [1m[36mImage Load (0.8ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 AND (images.id > 1 ) ORDER BY created_at asc LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/models/image.rb:6
+  [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" DESC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:8
+  Rendered images/show.html.erb within layouts/application (17.4ms)
+Completed 200 OK in 48ms (Views: 37.7ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/images/5" for ::1 at 2020-09-28 15:02:13 -0400
+Processing by ImagesController#show_router as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mImage Load (1.1ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:19
+  Rendering images/show.html.erb within layouts/application
+  [1m[36mImage Load (1.5ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" ASC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:4
+  [1m[36mImage Load (0.7ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 AND (images.id < 5 ) ORDER BY created_at DESC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/models/image.rb:3
+  [1m[36mImage Load (1.4ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 AND (images.id > 5 ) ORDER BY created_at asc LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/models/image.rb:6
+  [1m[36mImage Load (0.9ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" DESC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:8
+  Rendered images/show.html.erb within layouts/application (13.7ms)
+Completed 200 OK in 38ms (Views: 29.7ms | ActiveRecord: 5.7ms)
+
+
