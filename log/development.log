@@ -26190,3 +26190,1020 @@ Processing by ImagesController#show_router as HTML
 Completed 200 OK in 38ms (Views: 29.7ms | ActiveRecord: 5.7ms)
 
 
+  [1m[36mImage Load (3.2ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 80], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mImage Update (2.9ms)[0m  [1m[33mUPDATE "images" SET "name" = $1, "updated_at" = $2 WHERE "images"."id" = $3[0m  [["name", "Gottem"], ["updated_at", "2020-09-29 23:35:21.473996"], ["id", 80]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/" for ::1 at 2020-10-20 20:49:42 -0400
+  
+PG::ConnectionBad (could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+):
+  
+pg (1.1.4) lib/pg.rb:56:in `initialize'
+pg (1.1.4) lib/pg.rb:56:in `new'
+pg (1.1.4) lib/pg.rb:56:in `connect'
+activerecord (5.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:692:in `connect'
+activerecord (5.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:223:in `initialize'
+activerecord (5.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:48:in `new'
+activerecord (5.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:48:in `postgresql_connection'
+activerecord (5.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:811:in `new_connection'
+activerecord (5.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:855:in `checkout_new_connection'
+activerecord (5.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:834:in `try_to_checkout_new_connection'
+activerecord (5.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:795:in `acquire_connection'
+activerecord (5.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:523:in `checkout'
+activerecord (5.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:382:in `connection'
+activerecord (5.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:1014:in `retrieve_connection'
+activerecord (5.2.3) lib/active_record/connection_handling.rb:118:in `retrieve_connection'
+activerecord (5.2.3) lib/active_record/connection_handling.rb:90:in `connection'
+activerecord (5.2.3) lib/active_record/migration.rb:554:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2020-10-20 20:49:57 -0400
+  [1m[35m (8.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/camilomason/.rvm/gems/ruby-2.6.2/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (2.5ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" ASC[0m  [["nsfw", false]]
+  ↳ app/views/images/index.html.erb:27
+  Rendered images/index.html.erb within layouts/application (1827.5ms)
+Completed 200 OK in 1880ms (Views: 1854.9ms | ActiveRecord: 12.1ms)
+
+
+Started GET "/images/41" for ::1 at 2020-10-20 20:50:21 -0400
+Processing by ImagesController#show_router as HTML
+  Parameters: {"id"=>"41"}
+  [1m[36mImage Load (1.2ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 41], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:19
+  Rendering images/show.html.erb within layouts/application
+  [1m[36mImage Load (0.8ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" ASC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:4
+  [1m[36mImage Load (2.2ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 AND (images.id < 41 ) ORDER BY created_at DESC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/models/image.rb:3
+  [1m[36mImage Load (0.8ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 AND (images.id > 41 ) ORDER BY created_at asc LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/models/image.rb:6
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" DESC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:8
+  Rendered images/show.html.erb within layouts/application (13.1ms)
+Completed 200 OK in 30ms (Views: 20.8ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/" for ::1 at 2020-10-20 20:51:14 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (6.5ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" ASC[0m  [["nsfw", false]]
+  ↳ app/views/images/index.html.erb:27
+  Rendered images/index.html.erb within layouts/application (260.9ms)
+Completed 200 OK in 299ms (Views: 291.8ms | ActiveRecord: 6.5ms)
+
+
+Started GET "/images/44" for ::1 at 2020-10-20 20:51:23 -0400
+Processing by ImagesController#show_router as HTML
+  Parameters: {"id"=>"44"}
+  [1m[36mImage Load (0.6ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:19
+  Rendering images/show.html.erb within layouts/application
+  [1m[36mImage Load (0.7ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" ASC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:4
+  [1m[36mImage Load (0.6ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 AND (images.id < 44 ) ORDER BY created_at DESC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/models/image.rb:3
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 AND (images.id > 44 ) ORDER BY created_at asc LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/models/image.rb:6
+  [1m[36mImage Load (0.2ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" DESC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:8
+  Rendered images/show.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 25ms (Views: 21.2ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/images/44" for ::1 at 2020-10-20 20:52:26 -0400
+Processing by ImagesController#show_router as HTML
+  Parameters: {"id"=>"44"}
+  [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:19
+  Rendering images/show.html.erb within layouts/application
+  [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" ASC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:4
+  [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 AND (images.id < 44 ) ORDER BY created_at DESC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/models/image.rb:3
+  [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 AND (images.id > 44 ) ORDER BY created_at asc LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/models/image.rb:6
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" DESC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:8
+  Rendered images/show.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 46ms (Views: 42.5ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/images/44" for ::1 at 2020-10-20 20:52:33 -0400
+Processing by ImagesController#show_router as HTML
+  Parameters: {"id"=>"44"}
+  [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:19
+  Rendering images/show.html.erb within layouts/application
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" ASC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:4
+  [1m[36mImage Load (1.0ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 AND (images.id < 44 ) ORDER BY created_at DESC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/models/image.rb:3
+  [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 AND (images.id > 44 ) ORDER BY created_at asc LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/models/image.rb:6
+  [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" DESC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:8
+  Rendered images/show.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 60ms (Views: 55.3ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/images/44" for ::1 at 2020-10-20 20:53:02 -0400
+Processing by ImagesController#show_router as HTML
+  Parameters: {"id"=>"44"}
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:19
+  Rendering images/show.html.erb within layouts/application
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" ASC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:4
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 AND (images.id < 44 ) ORDER BY created_at DESC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/models/image.rb:3
+  [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 AND (images.id > 44 ) ORDER BY created_at asc LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/models/image.rb:6
+  [1m[36mImage Load (0.2ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" DESC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:8
+  Rendered images/show.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 82ms (Views: 78.6ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/images/44" for ::1 at 2020-10-20 20:53:20 -0400
+Processing by ImagesController#show_router as HTML
+  Parameters: {"id"=>"44"}
+  [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:19
+  Rendering images/show.html.erb within layouts/application
+  [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" ASC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:4
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 AND (images.id < 44 ) ORDER BY created_at DESC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/models/image.rb:3
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 AND (images.id > 44 ) ORDER BY created_at asc LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/models/image.rb:6
+  [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" DESC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:8
+  Rendered images/show.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 57ms (Views: 53.4ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/images/44" for ::1 at 2020-10-20 20:53:31 -0400
+Processing by ImagesController#show_router as HTML
+  Parameters: {"id"=>"44"}
+  [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:19
+  Rendering images/show.html.erb within layouts/application
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" ASC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:4
+  [1m[36mImage Load (0.7ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 AND (images.id < 44 ) ORDER BY created_at DESC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/models/image.rb:3
+  [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 AND (images.id > 44 ) ORDER BY created_at asc LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/models/image.rb:6
+  [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" DESC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:8
+  Rendered images/show.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 75ms (Views: 71.2ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/images/44" for ::1 at 2020-10-20 20:53:44 -0400
+Processing by ImagesController#show_router as HTML
+  Parameters: {"id"=>"44"}
+  [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:19
+  Rendering images/show.html.erb within layouts/application
+  [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" ASC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:4
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 AND (images.id < 44 ) ORDER BY created_at DESC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/models/image.rb:3
+  [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 AND (images.id > 44 ) ORDER BY created_at asc LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/models/image.rb:6
+  [1m[36mImage Load (0.2ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" DESC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:8
+  Rendered images/show.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 55ms (Views: 52.4ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/images/44" for ::1 at 2020-10-20 20:54:04 -0400
+Processing by ImagesController#show_router as HTML
+  Parameters: {"id"=>"44"}
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:19
+  Rendering images/show.html.erb within layouts/application
+  [1m[36mImage Load (0.8ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" ASC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:4
+  [1m[36mImage Load (0.6ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 AND (images.id < 44 ) ORDER BY created_at DESC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/models/image.rb:3
+  [1m[36mImage Load (0.7ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 AND (images.id > 44 ) ORDER BY created_at asc LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/models/image.rb:6
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" DESC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:8
+  Rendered images/show.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 50ms (Views: 46.1ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/images/44" for ::1 at 2020-10-20 20:54:17 -0400
+Processing by ImagesController#show_router as HTML
+  Parameters: {"id"=>"44"}
+  [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:19
+  Rendering images/show.html.erb within layouts/application
+  [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" ASC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:4
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 AND (images.id < 44 ) ORDER BY created_at DESC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/models/image.rb:3
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 AND (images.id > 44 ) ORDER BY created_at asc LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/models/image.rb:6
+  [1m[36mImage Load (0.2ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" DESC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:8
+  Rendered images/show.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 44ms (Views: 40.9ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/images/44" for ::1 at 2020-10-20 20:54:36 -0400
+Processing by ImagesController#show_router as HTML
+  Parameters: {"id"=>"44"}
+  [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:19
+  Rendering images/show.html.erb within layouts/application
+  [1m[36mImage Load (0.2ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" ASC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:4
+  [1m[36mImage Load (0.6ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 AND (images.id < 44 ) ORDER BY created_at DESC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/models/image.rb:3
+  [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 AND (images.id > 44 ) ORDER BY created_at asc LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/models/image.rb:6
+  [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" DESC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:8
+  Rendered images/show.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 50ms (Views: 46.3ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/images/44" for ::1 at 2020-10-20 20:54:41 -0400
+Processing by ImagesController#show_router as HTML
+  Parameters: {"id"=>"44"}
+  [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:19
+  Rendering images/show.html.erb within layouts/application
+  [1m[36mImage Load (0.2ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" ASC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:4
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 AND (images.id < 44 ) ORDER BY created_at DESC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/models/image.rb:3
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 AND (images.id > 44 ) ORDER BY created_at asc LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/models/image.rb:6
+  [1m[36mImage Load (0.2ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" DESC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:8
+  Rendered images/show.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 62ms (Views: 59.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/images/44" for ::1 at 2020-10-20 20:54:45 -0400
+Processing by ImagesController#show_router as HTML
+  Parameters: {"id"=>"44"}
+  [1m[36mImage Load (0.2ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:19
+  Rendering images/show.html.erb within layouts/application
+  [1m[36mImage Load (0.2ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" ASC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:4
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 AND (images.id < 44 ) ORDER BY created_at DESC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/models/image.rb:3
+  [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 AND (images.id > 44 ) ORDER BY created_at asc LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/models/image.rb:6
+  [1m[36mImage Load (0.2ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" DESC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:8
+  Rendered images/show.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 49ms (Views: 46.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/images/44" for ::1 at 2020-10-20 20:54:47 -0400
+Processing by ImagesController#show_router as HTML
+  Parameters: {"id"=>"44"}
+  [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:19
+  Rendering images/show.html.erb within layouts/application
+  [1m[36mImage Load (0.2ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" ASC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:4
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 AND (images.id < 44 ) ORDER BY created_at DESC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/models/image.rb:3
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 AND (images.id > 44 ) ORDER BY created_at asc LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/models/image.rb:6
+  [1m[36mImage Load (0.2ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" DESC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:8
+  Rendered images/show.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 22ms (Views: 19.6ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/images/44" for ::1 at 2020-10-20 20:54:50 -0400
+Processing by ImagesController#show_router as HTML
+  Parameters: {"id"=>"44"}
+  [1m[36mImage Load (0.2ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:19
+  Rendering images/show.html.erb within layouts/application
+  [1m[36mImage Load (0.2ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" ASC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:4
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 AND (images.id < 44 ) ORDER BY created_at DESC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/models/image.rb:3
+  [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 AND (images.id > 44 ) ORDER BY created_at asc LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/models/image.rb:6
+  [1m[36mImage Load (0.2ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" DESC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:8
+  Rendered images/show.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 65ms (Views: 61.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/images/44" for ::1 at 2020-10-20 20:55:36 -0400
+Processing by ImagesController#show_router as HTML
+  Parameters: {"id"=>"44"}
+  [1m[36mImage Load (1.7ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:19
+  Rendering images/show.html.erb within layouts/application
+  [1m[36mImage Load (3.6ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" ASC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:4
+  [1m[36mImage Load (5.5ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 AND (images.id < 44 ) ORDER BY created_at DESC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/models/image.rb:3
+  [1m[36mImage Load (0.6ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 AND (images.id > 44 ) ORDER BY created_at asc LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/models/image.rb:6
+  [1m[36mImage Load (0.2ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" DESC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:8
+  Rendered images/show.html.erb within layouts/application (16.7ms)
+Completed 200 OK in 59ms (Views: 46.4ms | ActiveRecord: 11.6ms)
+
+
+Started GET "/images/44" for ::1 at 2020-10-20 20:55:53 -0400
+Processing by ImagesController#show_router as HTML
+  Parameters: {"id"=>"44"}
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:19
+  Rendering images/show.html.erb within layouts/application
+  [1m[36mImage Load (0.2ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" ASC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:4
+  [1m[36mImage Load (0.8ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 AND (images.id < 44 ) ORDER BY created_at DESC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/models/image.rb:3
+  [1m[36mImage Load (0.7ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 AND (images.id > 44 ) ORDER BY created_at asc LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/models/image.rb:6
+  [1m[36mImage Load (0.2ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" DESC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:8
+  Rendered images/show.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 40ms (Views: 36.4ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/images/44" for ::1 at 2020-10-20 20:56:08 -0400
+Processing by ImagesController#show_router as HTML
+  Parameters: {"id"=>"44"}
+  [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:19
+  Rendering images/show.html.erb within layouts/application
+  [1m[36mImage Load (0.2ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" ASC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:4
+  [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 AND (images.id < 44 ) ORDER BY created_at DESC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/models/image.rb:3
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 AND (images.id > 44 ) ORDER BY created_at asc LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/models/image.rb:6
+  [1m[36mImage Load (0.2ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" DESC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:8
+  Rendered images/show.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 53ms (Views: 50.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/images/44" for ::1 at 2020-10-20 20:56:22 -0400
+Processing by ImagesController#show_router as HTML
+  Parameters: {"id"=>"44"}
+  [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:19
+  Rendering images/show.html.erb within layouts/application
+  [1m[36mImage Load (0.2ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" ASC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:4
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 AND (images.id < 44 ) ORDER BY created_at DESC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/models/image.rb:3
+  [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 AND (images.id > 44 ) ORDER BY created_at asc LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/models/image.rb:6
+  [1m[36mImage Load (0.1ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" DESC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:8
+  Rendered images/show.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 75ms (Views: 71.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/images/44" for ::1 at 2020-10-20 20:56:28 -0400
+Processing by ImagesController#show_router as HTML
+  Parameters: {"id"=>"44"}
+  [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:19
+  Rendering images/show.html.erb within layouts/application
+  [1m[36mImage Load (0.2ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" ASC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:4
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 AND (images.id < 44 ) ORDER BY created_at DESC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/models/image.rb:3
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 AND (images.id > 44 ) ORDER BY created_at asc LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/models/image.rb:6
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" DESC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:8
+  Rendered images/show.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 50ms (Views: 47.2ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/images/44" for ::1 at 2020-10-20 20:57:10 -0400
+Processing by ImagesController#show_router as HTML
+  Parameters: {"id"=>"44"}
+  [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:19
+  Rendering images/show.html.erb within layouts/application
+  [1m[36mImage Load (0.2ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" ASC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:4
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 AND (images.id < 44 ) ORDER BY created_at DESC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/models/image.rb:3
+  [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 AND (images.id > 44 ) ORDER BY created_at asc LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/models/image.rb:6
+  [1m[36mImage Load (0.1ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" DESC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:8
+  Rendered images/show.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 22ms (Views: 18.7ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/images/44" for ::1 at 2020-10-20 20:57:17 -0400
+Processing by ImagesController#show_router as HTML
+  Parameters: {"id"=>"44"}
+  [1m[36mImage Load (0.2ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:19
+  Rendering images/show.html.erb within layouts/application
+  [1m[36mImage Load (0.2ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" ASC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:4
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 AND (images.id < 44 ) ORDER BY created_at DESC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/models/image.rb:3
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 AND (images.id > 44 ) ORDER BY created_at asc LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/models/image.rb:6
+  [1m[36mImage Load (0.2ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" DESC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:8
+  Rendered images/show.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 45ms (Views: 42.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/images/44" for ::1 at 2020-10-20 20:57:43 -0400
+Processing by ImagesController#show_router as HTML
+  Parameters: {"id"=>"44"}
+  [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:19
+  Rendering images/show.html.erb within layouts/application
+  [1m[36mImage Load (0.2ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" ASC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:4
+  [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 AND (images.id < 44 ) ORDER BY created_at DESC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/models/image.rb:3
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 AND (images.id > 44 ) ORDER BY created_at asc LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/models/image.rb:6
+  [1m[36mImage Load (0.2ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" DESC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:8
+  Rendered images/show.html.erb within layouts/application (21.3ms)
+Completed 200 OK in 73ms (Views: 69.9ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/images/44" for ::1 at 2020-10-20 20:58:11 -0400
+Processing by ImagesController#show_router as HTML
+  Parameters: {"id"=>"44"}
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:19
+  Rendering images/show.html.erb within layouts/application
+  [1m[36mImage Load (0.2ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" ASC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:4
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 AND (images.id < 44 ) ORDER BY created_at DESC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/models/image.rb:3
+  [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 AND (images.id > 44 ) ORDER BY created_at asc LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/models/image.rb:6
+  [1m[36mImage Load (0.2ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" DESC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:8
+  Rendered images/show.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 52ms (Views: 48.1ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/images/44" for ::1 at 2020-10-20 20:58:21 -0400
+Processing by ImagesController#show_router as HTML
+  Parameters: {"id"=>"44"}
+  [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:19
+  Rendering images/show.html.erb within layouts/application
+  [1m[36mImage Load (0.6ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" ASC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:4
+  [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 AND (images.id < 44 ) ORDER BY created_at DESC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/models/image.rb:3
+  [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 AND (images.id > 44 ) ORDER BY created_at asc LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/models/image.rb:6
+  [1m[36mImage Load (0.2ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" DESC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:8
+  Rendered images/show.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 48ms (Views: 44.5ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/images/44" for ::1 at 2020-10-20 20:58:30 -0400
+Processing by ImagesController#show_router as HTML
+  Parameters: {"id"=>"44"}
+  [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:19
+  Rendering images/show.html.erb within layouts/application
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" ASC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:4
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 AND (images.id < 44 ) ORDER BY created_at DESC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/models/image.rb:3
+  [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 AND (images.id > 44 ) ORDER BY created_at asc LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/models/image.rb:6
+  [1m[36mImage Load (0.2ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" DESC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:8
+  Rendered images/show.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 60ms (Views: 56.7ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/images/44" for ::1 at 2020-10-20 20:58:36 -0400
+Processing by ImagesController#show_router as HTML
+  Parameters: {"id"=>"44"}
+  [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:19
+  Rendering images/show.html.erb within layouts/application
+  [1m[36mImage Load (0.2ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" ASC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:4
+  [1m[36mImage Load (1.9ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 AND (images.id < 44 ) ORDER BY created_at DESC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/models/image.rb:3
+  [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 AND (images.id > 44 ) ORDER BY created_at asc LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/models/image.rb:6
+  [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" DESC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:8
+  Rendered images/show.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 62ms (Views: 56.7ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/images/44" for ::1 at 2020-10-20 20:59:24 -0400
+Processing by ImagesController#show_router as HTML
+  Parameters: {"id"=>"44"}
+  [1m[36mImage Load (1.1ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:19
+  Rendering images/show.html.erb within layouts/application
+  [1m[36mImage Load (0.2ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" ASC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:4
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 AND (images.id < 44 ) ORDER BY created_at DESC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/models/image.rb:3
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 AND (images.id > 44 ) ORDER BY created_at asc LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/models/image.rb:6
+  [1m[36mImage Load (0.2ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" DESC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:8
+  Rendered images/show.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 50ms (Views: 45.8ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/images/44" for ::1 at 2020-10-20 21:00:02 -0400
+Processing by ImagesController#show_router as HTML
+  Parameters: {"id"=>"44"}
+  [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:19
+  Rendering images/show.html.erb within layouts/application
+  [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" ASC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:4
+  [1m[36mImage Load (0.7ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 AND (images.id < 44 ) ORDER BY created_at DESC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/models/image.rb:3
+  [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 AND (images.id > 44 ) ORDER BY created_at asc LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/models/image.rb:6
+  [1m[36mImage Load (0.2ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" DESC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:8
+  Rendered images/show.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 93ms (Views: 90.1ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/images/44" for ::1 at 2020-10-20 21:00:28 -0400
+Processing by ImagesController#show_router as HTML
+  Parameters: {"id"=>"44"}
+  [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:19
+  Rendering images/show.html.erb within layouts/application
+  [1m[36mImage Load (0.2ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" ASC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:4
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 AND (images.id < 44 ) ORDER BY created_at DESC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/models/image.rb:3
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 AND (images.id > 44 ) ORDER BY created_at asc LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/models/image.rb:6
+  [1m[36mImage Load (0.2ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" DESC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:8
+  Rendered images/show.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 43ms (Views: 40.3ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/images/44" for ::1 at 2020-10-20 21:00:32 -0400
+Processing by ImagesController#show_router as HTML
+  Parameters: {"id"=>"44"}
+  [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:19
+  Rendering images/show.html.erb within layouts/application
+  [1m[36mImage Load (0.2ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" ASC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:4
+  [1m[36mImage Load (0.6ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 AND (images.id < 44 ) ORDER BY created_at DESC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/models/image.rb:3
+  [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 AND (images.id > 44 ) ORDER BY created_at asc LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/models/image.rb:6
+  [1m[36mImage Load (0.9ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" DESC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:8
+  Rendered images/show.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 54ms (Views: 49.9ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/images/44" for ::1 at 2020-10-20 21:00:39 -0400
+Processing by ImagesController#show_router as HTML
+  Parameters: {"id"=>"44"}
+  [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:19
+  Rendering images/show.html.erb within layouts/application
+  [1m[36mImage Load (0.2ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" ASC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:4
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 AND (images.id < 44 ) ORDER BY created_at DESC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/models/image.rb:3
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 AND (images.id > 44 ) ORDER BY created_at asc LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/models/image.rb:6
+  [1m[36mImage Load (0.2ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" DESC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:8
+  Rendered images/show.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 48ms (Views: 45.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/images/44" for ::1 at 2020-10-20 21:00:43 -0400
+Processing by ImagesController#show_router as HTML
+  Parameters: {"id"=>"44"}
+  [1m[36mImage Load (0.2ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:19
+  Rendering images/show.html.erb within layouts/application
+  [1m[36mImage Load (0.2ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" ASC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:4
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 AND (images.id < 44 ) ORDER BY created_at DESC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/models/image.rb:3
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 AND (images.id > 44 ) ORDER BY created_at asc LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/models/image.rb:6
+  [1m[36mImage Load (0.2ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" DESC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:8
+  Rendered images/show.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 53ms (Views: 50.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/images/44" for ::1 at 2020-10-20 21:00:48 -0400
+Processing by ImagesController#show_router as HTML
+  Parameters: {"id"=>"44"}
+  [1m[36mImage Load (0.2ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:19
+  Rendering images/show.html.erb within layouts/application
+  [1m[36mImage Load (0.2ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" ASC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:4
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 AND (images.id < 44 ) ORDER BY created_at DESC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/models/image.rb:3
+  [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 AND (images.id > 44 ) ORDER BY created_at asc LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/models/image.rb:6
+  [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" DESC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:8
+  Rendered images/show.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 25ms (Views: 21.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/images/44" for ::1 at 2020-10-20 21:01:14 -0400
+Processing by ImagesController#show_router as HTML
+  Parameters: {"id"=>"44"}
+  [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:19
+  Rendering images/show.html.erb within layouts/application
+  [1m[36mImage Load (0.2ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" ASC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:4
+  [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 AND (images.id < 44 ) ORDER BY created_at DESC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/models/image.rb:3
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 AND (images.id > 44 ) ORDER BY created_at asc LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/models/image.rb:6
+  [1m[36mImage Load (0.1ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" DESC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:8
+  Rendered images/show.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 21ms (Views: 17.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/images/44" for ::1 at 2020-10-20 21:01:38 -0400
+Processing by ImagesController#show_router as HTML
+  Parameters: {"id"=>"44"}
+  [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:19
+  Rendering images/show.html.erb within layouts/application
+  [1m[36mImage Load (0.2ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" ASC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:4
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 AND (images.id < 44 ) ORDER BY created_at DESC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/models/image.rb:3
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 AND (images.id > 44 ) ORDER BY created_at asc LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/models/image.rb:6
+  [1m[36mImage Load (0.2ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" DESC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:8
+  Rendered images/show.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 50ms (Views: 47.3ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/images/44" for ::1 at 2020-10-20 21:01:47 -0400
+Processing by ImagesController#show_router as HTML
+  Parameters: {"id"=>"44"}
+  [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:19
+  Rendering images/show.html.erb within layouts/application
+  [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" ASC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:4
+  [1m[36mImage Load (0.7ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 AND (images.id < 44 ) ORDER BY created_at DESC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/models/image.rb:3
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 AND (images.id > 44 ) ORDER BY created_at asc LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/models/image.rb:6
+  [1m[36mImage Load (0.2ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" DESC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:8
+  Rendered images/show.html.erb within layouts/application (24.0ms)
+Completed 200 OK in 83ms (Views: 79.6ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/images/44" for ::1 at 2020-10-20 21:01:52 -0400
+Processing by ImagesController#show_router as HTML
+  Parameters: {"id"=>"44"}
+  [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:19
+  Rendering images/show.html.erb within layouts/application
+  [1m[36mImage Load (0.2ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" ASC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:4
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 AND (images.id < 44 ) ORDER BY created_at DESC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/models/image.rb:3
+  [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 AND (images.id > 44 ) ORDER BY created_at asc LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/models/image.rb:6
+  [1m[36mImage Load (0.2ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" DESC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:8
+  Rendered images/show.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 46ms (Views: 43.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/images/44" for ::1 at 2020-10-20 21:01:58 -0400
+Processing by ImagesController#show_router as HTML
+  Parameters: {"id"=>"44"}
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:19
+  Rendering images/show.html.erb within layouts/application
+  [1m[36mImage Load (0.2ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" ASC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:4
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 AND (images.id < 44 ) ORDER BY created_at DESC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/models/image.rb:3
+  [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 AND (images.id > 44 ) ORDER BY created_at asc LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/models/image.rb:6
+  [1m[36mImage Load (0.2ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" DESC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:8
+  Rendered images/show.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 46ms (Views: 42.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/images/44" for ::1 at 2020-10-20 21:02:03 -0400
+Processing by ImagesController#show_router as HTML
+  Parameters: {"id"=>"44"}
+  [1m[36mImage Load (0.2ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:19
+  Rendering images/show.html.erb within layouts/application
+  [1m[36mImage Load (0.7ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" ASC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:4
+  [1m[36mImage Load (0.7ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 AND (images.id < 44 ) ORDER BY created_at DESC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/models/image.rb:3
+  [1m[36mImage Load (1.2ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 AND (images.id > 44 ) ORDER BY created_at asc LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/models/image.rb:6
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" DESC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:8
+  Rendered images/show.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 123ms (Views: 118.5ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/images/44" for ::1 at 2020-10-20 21:03:08 -0400
+Processing by ImagesController#show_router as HTML
+  Parameters: {"id"=>"44"}
+  [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:19
+  Rendering images/show.html.erb within layouts/application
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" ASC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:4
+  [1m[36mImage Load (0.9ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 AND (images.id < 44 ) ORDER BY created_at DESC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/models/image.rb:3
+  [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 AND (images.id > 44 ) ORDER BY created_at asc LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/models/image.rb:6
+  [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" DESC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:8
+  Rendered images/show.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 58ms (Views: 54.5ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/images/44" for ::1 at 2020-10-20 21:03:45 -0400
+Processing by ImagesController#show_router as HTML
+  Parameters: {"id"=>"44"}
+  [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:19
+  Rendering images/show.html.erb within layouts/application
+  [1m[36mImage Load (0.2ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" ASC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:4
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 AND (images.id < 44 ) ORDER BY created_at DESC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/models/image.rb:3
+  [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 AND (images.id > 44 ) ORDER BY created_at asc LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/models/image.rb:6
+  [1m[36mImage Load (0.2ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" DESC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:8
+  Rendered images/show.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 27ms (Views: 23.7ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for ::1 at 2020-10-20 21:03:54 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (0.8ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" ASC[0m  [["nsfw", false]]
+  ↳ app/views/images/index.html.erb:27
+  Rendered images/index.html.erb within layouts/application (96.5ms)
+Completed 200 OK in 122ms (Views: 118.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/images/12" for ::1 at 2020-10-20 21:03:55 -0400
+Processing by ImagesController#show_router as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mImage Load (0.8ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:19
+  Rendering images/show.html.erb within layouts/application
+  [1m[36mImage Load (0.2ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" ASC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:4
+  [1m[36mImage Load (0.7ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 AND (images.id < 12 ) ORDER BY created_at DESC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/models/image.rb:3
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 AND (images.id > 12 ) ORDER BY created_at asc LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/models/image.rb:6
+  [1m[36mImage Load (0.2ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" DESC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:8
+  Rendered images/show.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 24ms (Views: 19.8ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/images/14" for ::1 at 2020-10-20 21:03:58 -0400
+Processing by ImagesController#show_router as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mImage Load (1.0ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:19
+  Rendering images/show.html.erb within layouts/application
+  [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" ASC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:4
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 AND (images.id < 14 ) ORDER BY created_at DESC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/models/image.rb:3
+  [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 AND (images.id > 14 ) ORDER BY created_at asc LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/models/image.rb:6
+  [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" DESC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:8
+  Rendered images/show.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 25ms (Views: 20.3ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/images/12" for ::1 at 2020-10-20 21:03:58 -0400
+Processing by ImagesController#show_router as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mImage Load (1.0ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:19
+  Rendering images/show.html.erb within layouts/application
+  [1m[36mImage Load (0.6ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" ASC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:4
+  [1m[36mImage Load (0.8ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 AND (images.id < 12 ) ORDER BY created_at DESC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/models/image.rb:3
+  [1m[36mImage Load (0.6ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 AND (images.id > 12 ) ORDER BY created_at asc LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/models/image.rb:6
+  [1m[36mImage Load (0.6ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" DESC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:8
+  Rendered images/show.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 29ms (Views: 23.5ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/" for ::1 at 2020-10-20 21:03:59 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (0.8ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" ASC[0m  [["nsfw", false]]
+  ↳ app/views/images/index.html.erb:27
+  Rendered images/index.html.erb within layouts/application (125.1ms)
+Completed 200 OK in 151ms (Views: 148.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/images/86" for ::1 at 2020-10-20 21:04:03 -0400
+Processing by ImagesController#show_router as HTML
+  Parameters: {"id"=>"86"}
+  [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 86], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:19
+  Rendering images/show.html.erb within layouts/application
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" ASC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:4
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 AND (images.id < 86 ) ORDER BY created_at DESC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/models/image.rb:3
+  [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 AND (images.id > 86 ) ORDER BY created_at asc LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/models/image.rb:6
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" DESC LIMIT $2[0m  [["nsfw", false], ["LIMIT", 1]]
+  ↳ app/views/images/show.html.erb:8
+  Rendered images/show.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 36ms (Views: 32.1ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for ::1 at 2020-10-20 21:04:04 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" ASC[0m  [["nsfw", false]]
+  ↳ app/views/images/index.html.erb:27
+  Rendered images/index.html.erb within layouts/application (134.7ms)
+Completed 200 OK in 157ms (Views: 155.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2020-10-20 21:04:24 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (0.6ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" ASC[0m  [["nsfw", false]]
+  ↳ app/views/images/index.html.erb:27
+  Rendered images/index.html.erb within layouts/application (95.4ms)
+Completed 200 OK in 154ms (Views: 151.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2020-10-20 21:04:34 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (1.0ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" ASC[0m  [["nsfw", false]]
+  ↳ app/views/images/index.html.erb:27
+  Rendered images/index.html.erb within layouts/application (112.8ms)
+Completed 200 OK in 165ms (Views: 162.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2020-10-20 21:04:37 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" ASC[0m  [["nsfw", false]]
+  ↳ app/views/images/index.html.erb:27
+  Rendered images/index.html.erb within layouts/application (116.6ms)
+Completed 200 OK in 186ms (Views: 184.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2020-10-20 21:04:43 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" ASC[0m  [["nsfw", false]]
+  ↳ app/views/images/index.html.erb:27
+  Rendered images/index.html.erb within layouts/application (92.4ms)
+Completed 200 OK in 163ms (Views: 161.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2020-10-20 21:05:05 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" ASC[0m  [["nsfw", false]]
+  ↳ app/views/images/index.html.erb:27
+  Rendered images/index.html.erb within layouts/application (77.7ms)
+Completed 200 OK in 169ms (Views: 167.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2020-10-20 21:05:28 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (0.6ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" ASC[0m  [["nsfw", false]]
+  ↳ app/views/images/index.html.erb:27
+  Rendered images/index.html.erb within layouts/application (80.5ms)
+Completed 200 OK in 177ms (Views: 174.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2020-10-20 21:05:58 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" ASC[0m  [["nsfw", false]]
+  ↳ app/views/images/index.html.erb:27
+  Rendered images/index.html.erb within layouts/application (65.4ms)
+Completed 200 OK in 169ms (Views: 166.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2020-10-20 21:06:10 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (0.7ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" ASC[0m  [["nsfw", false]]
+  ↳ app/views/images/index.html.erb:27
+  Rendered images/index.html.erb within layouts/application (149.0ms)
+Completed 200 OK in 198ms (Views: 195.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2020-10-20 21:06:30 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" ASC[0m  [["nsfw", false]]
+  ↳ app/views/images/index.html.erb:27
+  Rendered images/index.html.erb within layouts/application (101.1ms)
+Completed 200 OK in 158ms (Views: 155.7ms | ActiveRecord: 0.5ms)
+
+

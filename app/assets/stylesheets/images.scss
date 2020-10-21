@@ -3,7 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 a {
-  color: rgb(0,160,235);
+  color: #21b9ff;
   text-decoration: none;
 }
 blockquote, p {
@@ -29,12 +29,15 @@ h1, h2, h3, h4 {
 }
 .nav_btn {
   text-align: center;
-  border: 1px solid gray;
   border-radius: 2px;
-  padding: 5px;
+  background-color: #009dff;
+  color: white;
+  box-shadow: 0 0 5px gray;
+  padding: 4px 25px;
   font-family: "Baskerville";
-  padding-left: 20px;
-  padding-right: 20px;
+}
+.nav_btn:hover {
+  box-shadow: 0 0 3px black;
 }
 .icon {
   height: 20px;
