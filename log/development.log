@@ -27207,3 +27207,46 @@ Processing by ImagesController#index as HTML
 Completed 200 OK in 158ms (Views: 155.7ms | ActiveRecord: 0.5ms)
 
 
+Started GET "/" for ::1 at 2020-11-21 01:41:08 -0500
+  [1m[35m (4.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/camilomason/.rvm/gems/ruby-2.6.2/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (2.4ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" ASC[0m  [["nsfw", false]]
+  ↳ app/views/images/index.html.erb:27
+  Rendered images/index.html.erb within layouts/application (2224.1ms)
+Completed 200 OK in 2267ms (Views: 2249.7ms | ActiveRecord: 10.6ms)
+
+
+Started GET "/new" for ::1 at 2020-11-21 01:41:16 -0500
+Processing by ImagesController#new as HTML
+Completed 500 Internal Server Error in 95ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `before_action' for #<ImagesController:0x00007fb24be54520>):
+  
+app/controllers/images_controller.rb:29:in `new'
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2083386503135027895)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to AddDeviseToImages (20201121064206)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (6.6ms)[0m  [1m[35mALTER TABLE "images" ADD "email" character varying DEFAULT '' NOT NULL[0m
+  ↳ db/migrate/20201121064206_add_devise_to_images.rb:7
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "images" ADD "encrypted_password" character varying DEFAULT '' NOT NULL[0m
+  ↳ db/migrate/20201121064206_add_devise_to_images.rb:8
+  [1m[35m (0.9ms)[0m  [1m[35mALTER TABLE "images" ADD "reset_password_token" character varying[0m
+  ↳ db/migrate/20201121064206_add_devise_to_images.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "images" ADD "reset_password_sent_at" timestamp[0m
+  ↳ db/migrate/20201121064206_add_devise_to_images.rb:12
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "images" ADD "remember_created_at" timestamp[0m
+  ↳ db/migrate/20201121064206_add_devise_to_images.rb:15
+  [1m[35m (4.6ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_images_on_email" ON "images"  ("email")[0m
+  ↳ db/migrate/20201121064206_add_devise_to_images.rb:40
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(2083386503135027895)[0m
+  ↳ bin/rails:9
