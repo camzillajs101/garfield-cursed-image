@@ -27560,3 +27560,301 @@ Processing by Devise::RegistrationsController#new as HTML
 Completed 200 OK in 104ms (Views: 74.1ms | ActiveRecord: 17.4ms)
 
 
+Started POST "/admins" for ::1 at 2020-11-25 22:35:58 -0500
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"x8cOs+kDZrEJDZ8cz5CUKuFupmHUU/lFcko4aOZ1evWjdYH+OgTCcUk6PMHgNQZZadqsG8kt7V5D8oXA/ZesHQ==", "admin"=>{"email"=>"chamomilemasone@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/camilomason/.rvm/gems/ruby-2.6.2/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mAdmin Exists (1.0ms)[0m  [1m[34mSELECT  1 AS one FROM "admins" WHERE "admins"."email" = $1 LIMIT $2[0m  [["email", "chamomilemasone@gmail.com"], ["LIMIT", 1]]
+  ↳ /Users/camilomason/.rvm/gems/ruby-2.6.2/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mAdmin Create (3.5ms)[0m  [1m[32mINSERT INTO "admins" ("email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "chamomilemasone@gmail.com"], ["encrypted_password", "$2a$12$Z.mt9JX7ghlT5ycy.euF4usqdMgqFw00romLvl0JmTvqi4zDGMxVy"], ["created_at", "2020-11-26 03:35:58.741486"], ["updated_at", "2020-11-26 03:35:58.741486"]]
+  ↳ /Users/camilomason/.rvm/gems/ruby-2.6.2/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/camilomason/.rvm/gems/ruby-2.6.2/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 250ms (ActiveRecord: 5.4ms)
+
+
+Started GET "/" for ::1 at 2020-11-25 22:35:58 -0500
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (0.6ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" ASC[0m  [["nsfw", false]]
+  ↳ app/views/images/index.html.erb:27
+  Rendered images/index.html.erb within layouts/application (276.8ms)
+Completed 200 OK in 304ms (Views: 302.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/images/new" for ::1 at 2020-11-25 22:36:07 -0500
+Processing by ImagesController#show_router as HTML
+  Parameters: {"id"=>"new"}
+  [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:19
+Completed 404 Not Found in 2ms (ActiveRecord: 0.3ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Image with 'id'=new):
+  
+app/controllers/images_controller.rb:19:in `show_router'
+Started GET "/images/new" for ::1 at 2020-11-25 22:37:12 -0500
+Processing by ImagesController#show_router as HTML
+  Parameters: {"id"=>"new"}
+  [1m[36mImage Load (0.2ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:19
+Completed 404 Not Found in 9ms (ActiveRecord: 6.6ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Image with 'id'=new):
+  
+app/controllers/images_controller.rb:19:in `show_router'
+Started GET "/images/new" for ::1 at 2020-11-25 22:37:25 -0500
+Processing by ImagesController#show_router as HTML
+  Parameters: {"id"=>"new"}
+  [1m[36mImage Load (0.2ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:19
+Completed 404 Not Found in 7ms (ActiveRecord: 4.5ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Image with 'id'=new):
+  
+app/controllers/images_controller.rb:19:in `show_router'
+Started GET "/new" for ::1 at 2020-11-25 22:37:33 -0500
+Processing by ImagesController#new as HTML
+  Rendering images/new.html.erb within layouts/application
+  Rendered images/new.html.erb within layouts/application (229.9ms)
+Completed 500 Internal Server Error in 233ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `current_user' for #<#<Class:0x00007ff60ff0ad90>:0x00007ff60ff08748>
+Did you mean?  current_page?):
+    1: if you're reading this then you are signed in (hopefully)<br>
+    2: signed in with email <%= current_user.email %>
+  
+app/views/images/new.html.erb:2:in `_app_views_images_new_html_erb___2720256221904829962_70347403058400'
+Started GET "/new" for ::1 at 2020-11-25 22:37:50 -0500
+Processing by ImagesController#new as HTML
+  Rendering images/new.html.erb within layouts/application
+  [1m[36mAdmin Load (0.4ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/images/new.html.erb:2
+  Rendered images/new.html.erb within layouts/application (13.7ms)
+Completed 200 OK in 30ms (Views: 24.9ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/new" for ::1 at 2020-11-25 22:39:26 -0500
+Processing by ImagesController#new as HTML
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/camilomason/.rvm/gems/ruby-2.6.2/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering images/new.html.erb within layouts/application
+  Rendered images/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 35ms (Views: 12.7ms | ActiveRecord: 8.3ms)
+
+
+Started GET "/new" for ::1 at 2020-11-25 22:40:00 -0500
+Processing by ImagesController#new as HTML
+  [1m[36mAdmin Load (0.3ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/camilomason/.rvm/gems/ruby-2.6.2/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering images/new.html.erb within layouts/application
+  Rendered images/new.html.erb within layouts/application (281.3ms)
+Completed 500 Internal Server Error in 288ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `delete_admin_session_path' for #<#<Class:0x00007ff6127c41f0>:0x00007ff61a10fcf8>
+Did you mean?  destroy_admin_session_path
+               new_admin_session_path):
+    1: if you're reading this then you are signed in (hopefully)<br>
+    2: signed in with email <%= current_admin.email %><br><br>
+    3: <%= link_to "Sign out", delete_admin_session_path, method: :delete %>
+  
+app/views/images/new.html.erb:3:in `_app_views_images_new_html_erb___2720256221904829962_70347487961800'
+Started GET "/new" for ::1 at 2020-11-25 22:40:07 -0500
+Processing by ImagesController#new as HTML
+  [1m[36mAdmin Load (0.5ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/camilomason/.rvm/gems/ruby-2.6.2/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering images/new.html.erb within layouts/application
+  Rendered images/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 19ms (Views: 15.4ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/admins/sign_out" for ::1 at 2020-11-25 22:40:11 -0500
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"293/X77xqAYBu22kaUEL534fBduULdIuJn68SvUkG5W/b3ASbfYMxkGMznlG5JmU9qsPoYlTxjUXxgHi7sbNfQ=="}
+  [1m[36mAdmin Load (0.3ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/camilomason/.rvm/gems/ruby-2.6.2/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/camilomason/.rvm/gems/ruby-2.6.2/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/camilomason/.rvm/gems/ruby-2.6.2/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 11ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2020-11-25 22:40:11 -0500
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" ASC[0m  [["nsfw", false]]
+  ↳ app/views/images/index.html.erb:27
+  Rendered images/index.html.erb within layouts/application (147.7ms)
+Completed 200 OK in 184ms (Views: 182.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/new" for ::1 at 2020-11-25 22:40:14 -0500
+Processing by ImagesController#new as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/admins/sign_in" for ::1 at 2020-11-25 22:40:14 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering /Users/camilomason/.rvm/gems/ruby-2.6.2/gems/devise-4.7.3/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/camilomason/.rvm/gems/ruby-2.6.2/gems/devise-4.7.3/app/views/devise/shared/_links.html.erb (0.8ms)
+  Rendered /Users/camilomason/.rvm/gems/ruby-2.6.2/gems/devise-4.7.3/app/views/devise/sessions/new.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 31ms (Views: 30.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admins/sign_in" for ::1 at 2020-11-25 22:45:52 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering /Users/camilomason/.rvm/gems/ruby-2.6.2/gems/devise-4.7.3/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/camilomason/.rvm/gems/ruby-2.6.2/gems/devise-4.7.3/app/views/devise/shared/_links.html.erb (1.3ms)
+  Rendered /Users/camilomason/.rvm/gems/ruby-2.6.2/gems/devise-4.7.3/app/views/devise/sessions/new.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 41ms (Views: 29.4ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/admins/sign_up" for ::1 at 2020-11-25 22:45:58 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/admins/sign_up"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/admins/" for ::1 at 2020-11-25 22:46:01 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/admins"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2020-11-25 22:46:03 -0500
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (0.6ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" ASC[0m  [["nsfw", false]]
+  ↳ app/views/images/index.html.erb:27
+  Rendered images/index.html.erb within layouts/application (92.3ms)
+Completed 200 OK in 123ms (Views: 113.8ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/new" for ::1 at 2020-11-25 22:46:06 -0500
+Processing by ImagesController#new as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/admins/sign_in" for ::1 at 2020-11-25 22:46:06 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering /Users/camilomason/.rvm/gems/ruby-2.6.2/gems/devise-4.7.3/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/camilomason/.rvm/gems/ruby-2.6.2/gems/devise-4.7.3/app/views/devise/shared/_links.html.erb (0.7ms)
+  Rendered /Users/camilomason/.rvm/gems/ruby-2.6.2/gems/devise-4.7.3/app/views/devise/sessions/new.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 18ms (Views: 17.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admins/sign_in" for ::1 at 2020-11-25 22:46:11 -0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AGLzkLEAynjMkboK4W8NSM273qBNNCSYONHTBiTAV1AoFbJpy+3kMZtd91cOyRPLvV9GQGmSlDHVeaE03YdzUQ==", "admin"=>{"email"=>"chamomilemasone@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Log in"}
+  [1m[36mAdmin Load (1.0ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."email" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["email", "chamomilemasone@gmail.com"], ["LIMIT", 1]]
+  ↳ /Users/camilomason/.rvm/gems/ruby-2.6.2/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/camilomason/.rvm/gems/ruby-2.6.2/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mAdmin Update (0.8ms)[0m  [1m[33mUPDATE "admins" SET "remember_created_at" = $1, "updated_at" = $2 WHERE "admins"."id" = $3[0m  [["remember_created_at", "2020-11-26 03:46:11.607496"], ["updated_at", "2020-11-26 03:46:11.608195"], ["id", 1]]
+  ↳ /Users/camilomason/.rvm/gems/ruby-2.6.2/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/camilomason/.rvm/gems/ruby-2.6.2/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/new
+Completed 302 Found in 248ms (ActiveRecord: 3.9ms)
+
+
+Started GET "/new" for ::1 at 2020-11-25 22:46:11 -0500
+Processing by ImagesController#new as HTML
+  [1m[36mAdmin Load (0.4ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/camilomason/.rvm/gems/ruby-2.6.2/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering images/new.html.erb within layouts/application
+  Rendered images/new.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 17ms (Views: 14.6ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/admins/sign_out" for ::1 at 2020-11-25 22:46:17 -0500
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"qxWpBg7b3c1D+05H+eLztUz/V9Uysi8P4ExiPjlPGLtLWLHlvv5Lwz0qoZgPz9qxiH1Z+tdsnWnusen6oY0Hbw=="}
+  [1m[36mAdmin Load (0.3ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/camilomason/.rvm/gems/ruby-2.6.2/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/camilomason/.rvm/gems/ruby-2.6.2/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mAdmin Update (0.3ms)[0m  [1m[33mUPDATE "admins" SET "remember_created_at" = $1, "updated_at" = $2 WHERE "admins"."id" = $3[0m  [["remember_created_at", nil], ["updated_at", "2020-11-26 03:46:17.941222"], ["id", 1]]
+  ↳ /Users/camilomason/.rvm/gems/ruby-2.6.2/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/camilomason/.rvm/gems/ruby-2.6.2/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 7ms (ActiveRecord: 2.5ms)
+
+
+Started GET "/" for ::1 at 2020-11-25 22:46:17 -0500
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" ASC[0m  [["nsfw", false]]
+  ↳ app/views/images/index.html.erb:27
+  Rendered images/index.html.erb within layouts/application (86.2ms)
+Completed 200 OK in 109ms (Views: 107.8ms | ActiveRecord: 0.5ms)
+
+

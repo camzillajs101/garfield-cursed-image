@@ -1,4 +1,6 @@
 class ImagesController < ApplicationController
+  before_action :authenticate_admin!, only: :new
+
   def index
     @images = Image.where(nsfw: false).order(id: :asc)
     @footer = true;
@@ -13,6 +15,10 @@ class ImagesController < ApplicationController
   end
 
   def show_nsfw
+  end
+
+  def new
+    @image = Image.new
   end
 
   def show_router
