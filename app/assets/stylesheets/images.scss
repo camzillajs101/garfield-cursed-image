@@ -2,6 +2,15 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+@font-face { /* basic text font */
+  font-family: "Baskerville";
+  src: font-url('Baskerville.ttc');
+}
+@font-face { /* titles */
+  font-family: "Didot";
+  src: font-url('Didot.ttc');
+}
+
 a {
   color: #21b9ff;
   text-decoration: none;

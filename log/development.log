@@ -27858,3 +27858,77 @@ Processing by ImagesController#index as HTML
 Completed 200 OK in 109ms (Views: 107.8ms | ActiveRecord: 0.5ms)
 
 
+Started GET "/" for ::1 at 2020-11-25 22:58:38 -0500
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/camilomason/.rvm/gems/ruby-2.6.2/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (0.9ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" ASC[0m  [["nsfw", false]]
+  ↳ app/views/images/index.html.erb:27
+  Rendered images/index.html.erb within layouts/application (2102.9ms)
+Completed 200 OK in 2187ms (Views: 2169.1ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/new" for ::1 at 2020-11-25 22:58:42 -0500
+Processing by ImagesController#new as HTML
+Completed 401 Unauthorized in 5ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/admins/sign_in" for ::1 at 2020-11-25 22:58:42 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (3.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 62ms (Views: 39.5ms | ActiveRecord: 9.9ms)
+
+
+Started GET "/admins/sign_in" for ::1 at 2020-11-25 22:58:48 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 40ms (Views: 38.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admins/sign_in" for ::1 at 2020-11-25 22:59:13 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 18ms (Views: 16.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admins/sign_in" for ::1 at 2020-11-25 22:59:22 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 16ms (Views: 14.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2021-03-03 12:09:06 -0500
+  [1m[35m (3.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/camilomason/.rvm/gems/ruby-2.6.2/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+Started GET "/" for ::1 at 2021-03-03 12:09:10 -0500
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (31.6ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" ASC[0m  [["nsfw", false]]
+  ↳ app/views/images/index.html.erb:27
+  Rendered images/index.html.erb within layouts/application (4229.7ms)
+Completed 200 OK in 4370ms (Views: 4285.7ms | ActiveRecord: 70.5ms)
+
+
+  [1m[36mImage Load (0.9ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" ASC[0m  [["nsfw", false]]
+  ↳ app/views/images/index.html.erb:27
+  Rendered images/index.html.erb within layouts/application (2469.5ms)
+Completed 200 OK in 2506ms (Views: 2502.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-03 12:10:42 -0500
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (0.6ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."nsfw" = $1 ORDER BY "images"."id" ASC[0m  [["nsfw", false]]
+  ↳ app/views/images/index.html.erb:27
+  Rendered images/index.html.erb within layouts/application (66.9ms)
+Completed 200 OK in 144ms (Views: 140.7ms | ActiveRecord: 0.8ms)
+
+

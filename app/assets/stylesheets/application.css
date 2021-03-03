@@ -13,12 +13,3 @@
  *= require_tree .
  *= require_self
  */
-
-@font-face { /* basic text font */
-  font-family: "Baskerville";
-  src: url('Baskerville.ttc');
-}
-@font-face { /* titles */
-  font-family: "Didot";
-  src: url('Didot.ttc');
-}
