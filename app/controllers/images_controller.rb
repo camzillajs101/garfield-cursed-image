@@ -1,5 +1,5 @@
 class ImagesController < ApplicationController
-  before_action :authenticate_admin!, only: :new
+  before_action :authenticate_admin!, only: [:new, :edit]
 
   def index
     @images = Image.where(nsfw: false).order(id: :asc)
@@ -21,6 +21,24 @@ class ImagesController < ApplicationController
     @image = Image.new
   end
 
+  def create
+    @image = Image.new(image_params)
+
+    if @image.save
+      redirect_to @image
+    else
+      render :new
+    end
+  end
+
+  def edit
+
+  end
+
+  def update
+
+  end
+
   def show_router
     @image = Image.find(params[:id])
     puts @image.nsfw
@@ -34,4 +52,9 @@ class ImagesController < ApplicationController
   def ssl
     render file: "#{Rails.root}/app/assets/files/E8DB7BA1796C667107D79492B04DF9FA.txt"
   end
+
+  private
+    def image_params
+      params.require(:image).permit(:name, :path, :nsfw)
+    end
 end

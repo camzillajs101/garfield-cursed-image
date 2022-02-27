@@ -1,5 +1,12 @@
 <% content_for :title, "The Garfield Cursed Image Gallery" %>
 
+<% if admin_signed_in? %>
+  <div class="admin-account-info">
+    Currently signed in as <%= current_admin.email %> | <%= link_to "Log out", destroy_admin_session_path, method: :delete %><br>
+    <%= link_to "Add image", new_image_path %>
+  </div>
+<% end %>
+
 <center>
   <h2>Welcome to the</h2>
   <h1>Garfield Cursed Image Gallery!</h1>

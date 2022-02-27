@@ -13,3 +13,17 @@
  *= require_tree .
  *= require_self
  */
+
+a {
+ color: #21b9ff;
+ text-decoration: none;
+}
+blockquote, p {
+ text-indent: 20px;
+ font-family: "Baskerville";
+ line-height: 25px;
+ text-align: justify;
+}
+h1, h2, h3, h4 {
+ font-family: "Didot";
+}

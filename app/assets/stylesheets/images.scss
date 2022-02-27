@@ -11,19 +11,12 @@
   src: font-url('Didot.ttc');
 }
 
-a {
-  color: #21b9ff;
-  text-decoration: none;
+.admin-account-info {
+  position: absolute;
+  top: 0.5em;
+  left: 0.5em;
 }
-blockquote, p {
-  text-indent: 20px;
-  font-family: "Baskerville";
-  line-height: 25px;
-  text-align: justify;
-}
-h1, h2, h3, h4 {
-  font-family: "Didot";
-}
+
 .garf {
   margin: 20px;
   border: 1px solid gray;
